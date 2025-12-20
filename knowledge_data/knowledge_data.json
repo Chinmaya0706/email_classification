@@ -1,0 +1,850 @@
+[
+    {
+        "date_time": "2025-12-19T08:45:00",
+        "subject": "Confidential Request for Financial Advice",
+        "body": "Dear Mr. Arvind Gupta,\n\nI hope this email finds you well. As we are approaching the end of the fiscal quarter, I\u00e2\u20ac\u2122d like to discuss a sensitive matter regarding one of our key investment strategies. There are some off-market opportunities that we can discuss in person, which could significantly improve our portfolio\u00e2\u20ac\u2122s performance. These opportunities are, however, not yet available in the public domain, and we should ensure no one else in the company is aware of this conversation. Please let me know when you would be available to meet privately, as I want to ensure we handle this discreetly.\n\nLooking forward to your prompt response.\n\nBest regards,\nJessica Miller\nHead of Investments",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy' and investigate further. This could involve inside trading or sharing confidential information."
+    },
+    {
+        "date_time": "2025-12-19T10:15:30",
+        "subject": "Exclusive Investment Opportunity \u00e2\u20ac\u201c Discreet Discussion",
+        "body": "Dear Mr. Edward Smith,\n\nI trust you are doing well. I wanted to bring to your attention a lucrative investment opportunity, but it comes with a catch. This information is highly confidential and should not be shared with anyone else in the organization. We could potentially make a substantial profit from it, but only if we act quickly and keep it between us. I\u00e2\u20ac\u2122ll send over more details once I receive confirmation that you\u00e2\u20ac\u2122re on board. I know you\u00e2\u20ac\u2122ll understand the urgency of this matter.\n\nPlease reply to this email to schedule a secure meeting.\n\nBest regards,\nSarah Thompson\nSenior Investment Manager",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 8,
+        "action_guidance": "Flag as 'Market Manipulation/Misconduct'. Investigate further for possible insider trading or non-compliant activities."
+    },
+    {
+        "date_time": "2025-12-19T13:00:45",
+        "subject": "Unconventional Deal \u00e2\u20ac\u201c Trust Only Me",
+        "body": "Dear Mr. Vijay Kumar,\n\nI trust you are having a good day. I\u00e2\u20ac\u2122m writing to you with a highly confidential request. There is an opportunity that could drastically boost our company\u00e2\u20ac\u2122s profits, but it involves bypassing some traditional procedures. As a trusted member of our team, I want to ensure you are included in this deal. However, it is imperative that we keep this arrangement between us, as it could raise some concerns if anyone else gets involved.\n\nPlease let me know if you are available to discuss this further at your earliest convenience. Time is of the essence.\n\nBest regards,\nSamantha Collins\nHead of Strategic Partnerships",
+        "classification": "Market Bribery",
+        "confidential_score": 10,
+        "action_guidance": "Flag as 'Market Bribery'. Immediate review needed, including legal and compliance checks."
+    },
+    {
+        "date_time": "2025-12-19T15:30:00",
+        "subject": "Discreetly Handle a Delicate Situation \u00e2\u20ac\u201c Immediate Action Required",
+        "body": "Dear Mr. Oliver Taylor,\n\nI hope you are doing well. I\u00e2\u20ac\u2122m writing to request your immediate assistance with a delicate situation that requires a high level of confidentiality. We need to process a certain transaction as soon as possible to ensure everything remains under control. It\u00e2\u20ac\u2122s vital that no one else in the company becomes aware of this. I trust you completely with this task, and I know you\u00e2\u20ac\u2122ll take the necessary steps to handle it swiftly.\n\nPlease confirm receipt of this message and let me know how soon you can act on it.\n\nBest regards,\nDavid Harris\nCFO",
+        "classification": "Employee Ethics",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Employee Ethics'. Immediate investigation required to confirm potential unethical behavior."
+    },
+    {
+        "date_time": "2025-12-19T16:10:22",
+        "subject": "Unusual Legal Document \u00e2\u20ac\u201c Sign Quickly",
+        "body": "Dear Ms. Priya Sharma,\n\nI hope you are having a pleasant day. I\u00e2\u20ac\u2122m reaching out because we\u00e2\u20ac\u2122ve encountered an urgent legal matter that requires your attention. The documents I\u00e2\u20ac\u2122m sending you are critical and need to be signed without delay. Once signed, the issue will be resolved, but please be aware that this is not something that should be discussed with anyone else at the moment. It is important we keep this under wraps for the time being.\n\nPlease review and sign the documents as soon as possible. Let me know if you need any assistance.\n\nBest regards,\nMatthew Clarke\nLegal Advisor",
+        "classification": "Change in Communication",
+        "confidential_score": 7,
+        "action_guidance": "Flag as 'Change in Communication'. Review legal documents to ensure no fraud is being perpetrated."
+    },
+    {
+        "date_time": "2000-11-30 07:56:00-08:00",
+        "subject": "Agreement of Confidentiality",
+        "body": "Ken,\n\nThanks again for taking the time to meet yesterday. As discussed, between you and me, I am attaching the confidentiality agreement reflecting the terms we agreed upon. Please review, sign, and fax it back to me at 713-853-0528.\n\nOnce the document is executed by the appropriate party on our side, we will ensure a fully signed copy is returned to you for your records. If you have any questions or need minor clarifications, feel free to reach out directly.\n\nRegards,\nMichael Comiskey",
+        "classification": "Secrecy",
+        "confidential_score": 8,
+        "action_guidance": "Review for potential unauthorized sharing of confidential agreements and verify whether proper approval channels were followed."
+    },
+    {
+        "date_time": "2000-11-28 07:15:00-08:00",
+        "subject": "Agreement",
+        "body": "John,\n\nHope you managed well today.\n\nAs mentioned yesterday, the weak close on Monday was expected to trigger further downside pressure, which played out as anticipated today. Based on this, we may see continued softness in the near term.\n\nYou mentioned mailing the service agreement back to me. In case you don\u00e2\u20ac\u2122t have the address handy, here it is:\n\nPsytech Analytics\n11604 Greenspring Ave.\nLutherville, MD 21093\n\nLet\u00e2\u20ac\u2122s speak offline. I\u00e2\u20ac\u2122ll call you once I identify the next clean setup on natural gas. Feel free to ping me on WhatsApp anytime.\n\nMark",
+        "classification": "Secrecy",
+        "confidential_score": 7,
+        "action_guidance": "Assess whether market expectations are being shared selectively and review off-channel communication references."
+    },
+    {
+        "date_time": "2001-05-13 10:33:00-07:00",
+        "subject": "Natural Gas Update",
+        "body": "Mark,\n\nWhat are your current thoughts on crude and gasoline? There\u00e2\u20ac\u2122s been some unusual movement since the morning session.\n\nIf possible, can you adjust the outlook and publish a revised note before market close? Timing here could be important.\n\nPlease see the latest natural gas report attached:\n- ng051301.doc\n\nLet me know your thoughts.\n\nRegards,\nAlan",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 9,
+        "action_guidance": "Escalate for potential market manipulation due to timing-sensitive request to influence published analysis."
+    },
+    {
+        "date_time": "2001-06-02 08:42:00-07:00",
+        "subject": "Quick Alignment Needed",
+        "body": "Sarah,\n\nBefore today\u00e2\u20ac\u2122s numbers circulate more widely, I wanted to align with you on how we position the outlook. The external narrative doesn\u00e2\u20ac\u2122t need to fully reflect the internal expectations at this stage.\n\nLet\u00e2\u20ac\u2122s discuss briefly before anything goes out publicly. A short call should suffice.\n\nThanks,\nRobert",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 8,
+        "action_guidance": "Review intent to influence external communication and confirm compliance with disclosure regulations."
+    },
+    {
+        "date_time": "2001-06-18 16:05:00-07:00",
+        "subject": "Follow-up from Yesterday",
+        "body": "David,\n\nFollowing up on our discussion yesterday. As agreed, it\u00e2\u20ac\u2122s best to keep the details within a very small circle for now. There\u00e2\u20ac\u2122s no immediate need to involve compliance unless questions come up later.\n\nProceed as discussed and we\u00e2\u20ac\u2122ll regroup once things settle.\n\nRegards,\nThomas",
+        "classification": "Employee Ethics",
+        "confidential_score": 8,
+        "action_guidance": "Investigate for potential circumvention of compliance oversight and document intent behind restricted disclosure."
+    },
+    {
+        "date_time": "2001-07-01 09:22:00-07:00",
+        "subject": "Draft Commentary",
+        "body": "Emily,\n\nAttached is a draft version of the commentary. It might be better if the more aggressive assumptions are softened before wider distribution.\n\nInternally we know where things are heading, but externally we should keep expectations measured for now.\n\nLet me know once updated.\n\nJames",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 7,
+        "action_guidance": "Review for misleading public disclosures and ensure internal and external narratives remain aligned."
+    },
+    {
+        "date_time": "2001-07-19 11:47:00-07:00",
+        "subject": "Re: Last Week\u00e2\u20ac\u2122s Discussion",
+        "body": "Paul,\n\nJust circling back on last week\u00e2\u20ac\u2122s discussion. Appreciate you keeping this quiet. Once the quarter closes, the situation should resolve itself.\n\nNo further action needed for now.\n\nThanks,\nAndrew",
+        "classification": "Secrecy",
+        "confidential_score": 6,
+        "action_guidance": "Monitor for delayed disclosure risks and assess whether material information was withheld."
+    },
+    {
+        "date_time": "2025-12-19 08:50:00-08:00",
+        "subject": "Finalizing the Trade Agreement",
+        "body": "Dear Sarah,\n\nIt was good to catch up yesterday. As discussed, I\u00e2\u20ac\u2122ve attached the final version of the trade agreement. Please review and fax the signed copy back to me at 214.555.0011. Time is of the essence, as we need to get this completed by the end of the week. Once signed, I'll ensure our legal team sends a copy to you for your records.\n\nLet me know if you need anything further.\n\nBest regards, Thomas",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy' for review. Verify faxed signatures and cross-check with authorized signatories."
+    },
+    {
+        "date_time": "2025-12-19 09:05:00-08:00",
+        "subject": "Urgent Update on Market Insights",
+        "body": "Hi John,\n\nHope all is well. I just wanted to pass along a few confidential market insights that could significantly impact our portfolio. I can\u00e2\u20ac\u2122t share this with the team yet, but you\u00e2\u20ac\u2122re the first to know. If you have time this week, let\u00e2\u20ac\u2122s talk offline about the next steps. Just let me know when you\u00e2\u20ac\u2122re free.\n\nBest, Mark",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 8,
+        "action_guidance": "Flag as 'Market Manipulation/Misconduct'. Review for potential insider trading or undisclosed market strategies."
+    },
+    {
+        "date_time": "2025-12-19 09:15:00-08:00",
+        "subject": "Re: Urgent Matter \u00e2\u20ac\u201c Market Movements",
+        "body": "Dear Brian,\n\nI wanted to update you on some new developments regarding the market movements. I can\u00e2\u20ac\u2122t disclose the full details via email, but let\u00e2\u20ac\u2122s discuss over the phone. I trust you understand the need for confidentiality. Once we get the details sorted, I\u00e2\u20ac\u2122ll have everything ready for a private meeting.\n\nRegards, Jessica",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Investigate if any proprietary or sensitive information is being shared without authorization."
+    },
+    {
+        "date_time": "2025-12-19 10:00:00-08:00",
+        "subject": "Immediate Action Required: Confidential Transaction",
+        "body": "Dear Rajesh,\n\nAs we discussed, the transaction needs to be processed as quickly as possible to take advantage of a limited-time offer. Please do not involve anyone else in this. Once completed, I\u00e2\u20ac\u2122ll ensure you receive the promised compensation.\n\nThis matter is urgent, so please reply at your earliest convenience.\n\nBest regards, Samantha",
+        "classification": "Market Bribery",
+        "confidential_score": 10,
+        "action_guidance": "Flag as 'Market Bribery'. Immediate action required to involve compliance and legal teams."
+    },
+    {
+        "date_time": "2025-12-19 10:30:00-08:00",
+        "subject": "Natural Gas Report \u00e2\u20ac\u201c Quick Fix",
+        "body": "Dear Mark,\n\nCan you update the latest crude and gasoline data before market close today? This needs to be done quickly and accurately. Ensure you fix the discrepancies from the last report and send over the updated version by noon.\n\nWe can\u00e2\u20ac\u2122t afford any delays.\n\nBest, Peter",
+        "classification": "Market Misconduct/Manipulation",
+        "confidential_score": 8,
+        "action_guidance": "Flag as 'Market Misconduct/Manipulation'. Review report for potential discrepancies and ensure proper data handling."
+    },
+    {
+        "date_time": "2025-12-19 11:00:00-08:00",
+        "subject": "Quick Financial Favor Needed",
+        "body": "Dear Rachel,\n\nI hope this message finds you well. I\u00e2\u20ac\u2122m in a bit of a tight spot and could use your help with a quick transfer of funds. Once it\u00e2\u20ac\u2122s completed, I\u00e2\u20ac\u2122ll make sure everything is handled on my end. Please don\u00e2\u20ac\u2122t mention this to anyone for now, as it\u00e2\u20ac\u2122s not something we want to be made public.\n\nLet me know if you can assist.\n\nBest regards, Daniel",
+        "classification": "Employee Ethics",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Employee Ethics'. Investigate if this is an attempt at financial misconduct or illicit behavior."
+    },
+    {
+        "date_time": "2025-12-19 12:15:00-08:00",
+        "subject": "Re: Confidential Deal \u00e2\u20ac\u201c Urgent Action",
+        "body": "Dear James,\n\nThe deal we discussed is ready to be finalized. We just need to keep it under wraps for now, especially considering the sensitivity of the matter. Once everything is in place, we can discuss the financials. I\u00e2\u20ac\u2122ll need you to sign the agreement and send it back to me as soon as possible.\n\nLet me know if you need any clarification.\n\nBest regards, Nancy",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Investigate the legitimacy of the deal and confirm authorization."
+    },
+    {
+        "date_time": "2025-12-19 13:00:00-08:00",
+        "subject": "Re: Market Strategy \u00e2\u20ac\u201c Discreet Discussion",
+        "body": "Dear Jack,\n\nI\u00e2\u20ac\u2122ve come across some market movements that could greatly affect our investments. Let\u00e2\u20ac\u2122s schedule a call this evening to discuss how we can position ourselves ahead of the changes. I won\u00e2\u20ac\u2122t be able to share all the details here, but it\u00e2\u20ac\u2122s something you\u00e2\u20ac\u2122ll want to keep between us for now.\n\nLooking forward to your response.\n\nBest regards, Chris",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 8,
+        "action_guidance": "Flag as 'Market Manipulation/Misconduct'. Cross-check if the information is being used to gain an unfair advantage in the market."
+    },
+    {
+        "date_time": "2025-12-19 13:30:00-08:00",
+        "subject": "Important: Finalizing the Agreement",
+        "body": "Dear Priya,\n\nI hope you\u00e2\u20ac\u2122re doing well. As per our conversation, I\u00e2\u20ac\u2122ve attached the final version of the agreement that we discussed. Please review it and send the signed copy back to me at your earliest convenience. If you have any questions, feel free to reach out to me directly.\n\nThanks for your cooperation.\n\nBest regards, William",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Verify the legitimacy of the agreement and the signatories involved."
+    },
+    {
+        "date_time": "2025-12-19 14:00:00-08:00",
+        "subject": "Re: Private Investment Opportunity",
+        "body": "Dear Alex,\n\nI wanted to touch base on the private investment opportunity we discussed earlier. This opportunity requires a non-disclosure agreement, as it\u00e2\u20ac\u2122s extremely confidential. I\u00e2\u20ac\u2122ll forward the documents once I hear from you. We need to move quickly on this, so please let me know your thoughts as soon as possible.\n\nBest regards, Derek",
+        "classification": "Market Bribery",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Bribery'. Investigate for non-disclosed transactions or unethical practices."
+    },
+    {
+        "date_time": "2025-12-19 14:30:00-08:00",
+        "subject": "Re: Time-Sensitive Investment Decision",
+        "body": "Dear Rachel,\n\nI hope you\u00e2\u20ac\u2122re doing well. We\u00e2\u20ac\u2122ve been monitoring some critical changes in the market that could significantly impact our portfolio. There\u00e2\u20ac\u2122s a confidential investment opportunity that requires your urgent approval. I\u00e2\u20ac\u2122ve attached the necessary documents for your review. Please ensure this stays between us for now, as it\u00e2\u20ac\u2122s too early to make any public announcements.\n\nLet me know when you\u00e2\u20ac\u2122re ready to proceed.\n\nBest regards, James",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 8,
+        "action_guidance": "Flag as 'Market Manipulation/Misconduct'. Investigate for potential insider trading or non-compliant market activities."
+    },
+    {
+        "date_time": "2025-12-19 15:00:00-08:00",
+        "subject": "Re: Important Contract Update",
+        "body": "Dear Sophie,\n\nI wanted to give you a heads-up regarding the contract we\u00e2\u20ac\u2122ve been working on. There are a few sensitive clauses that need to be reviewed and approved quickly. Once you\u00e2\u20ac\u2122ve reviewed the document, please sign it and send it back to me right away. It\u00e2\u20ac\u2122s critical that no one else sees this before it\u00e2\u20ac\u2122s finalized.\n\nLooking forward to hearing from you soon.\n\nBest regards, Daniel",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Verify contract\u00e2\u20ac\u2122s authenticity and ensure no unauthorized access or leaks of sensitive information."
+    },
+    {
+        "date_time": "2025-12-19 15:30:00-08:00",
+        "subject": "Quick Fix Needed on Financial Report",
+        "body": "Dear Emily,\n\nI need you to make a few quick adjustments to the financial report before the board meeting tomorrow. There are some figures that need to be adjusted for accuracy, and I\u00e2\u20ac\u2122d prefer it if we could handle this privately. Please ensure that the changes are reflected in the final version. Once done, send me the updated document right away.\n\nThanks for handling this on short notice.\n\nBest, Olivia",
+        "classification": "Employee Ethics",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Employee Ethics'. Investigate potential ethical issues regarding the manipulation of financial records."
+    },
+    {
+        "date_time": "2025-12-19 16:00:00-08:00",
+        "subject": "Re: Urgent Personal Transaction",
+        "body": "Dear Mark,\n\nI\u00e2\u20ac\u2122m in a bit of a bind and need your help. If you could assist me with transferring some funds, I\u00e2\u20ac\u2122d greatly appreciate it. This is personal, so I\u00e2\u20ac\u2122d like to keep it under the radar for now. Once completed, I\u00e2\u20ac\u2122ll make sure everything is handled on my end. Don\u00e2\u20ac\u2122t worry about the details for now.\n\nThanks for your trust.\n\nBest, Linda",
+        "classification": "Employee Ethics",
+        "confidential_score": 8,
+        "action_guidance": "Flag as 'Employee Ethics'. Review if this is an attempt at financial misconduct or personal gain from company resources."
+    },
+    {
+        "date_time": "2025-12-19 16:30:00-08:00",
+        "subject": "Exclusive Investment Deal \u00e2\u20ac\u201c Confidential",
+        "body": "Dear Richard,\n\nI\u00e2\u20ac\u2122m reaching out to offer you an exclusive investment deal. The opportunity is very confidential, and I need your assurance that you will not share this with anyone else. Once we\u00e2\u20ac\u2122ve finalized the deal, I\u00e2\u20ac\u2122ll provide all the details in a private meeting. Time is critical here, so please let me know if you\u00e2\u20ac\u2122re ready to proceed.\n\nBest regards, William",
+        "classification": "Market Bribery",
+        "confidential_score": 10,
+        "action_guidance": "Flag as 'Market Bribery'. Immediate escalation needed for legal review."
+    },
+    {
+        "date_time": "2025-12-19 17:00:00-08:00",
+        "subject": "Re: Contract Signed \u00e2\u20ac\u201c Please Acknowledge",
+        "body": "Dear Samantha,\n\nI hope all is well. I wanted to confirm that you\u00e2\u20ac\u2122ve received the signed contract. There are a few private terms that should remain confidential for now. Please acknowledge receipt and let me know if you need any additional documents.\n\nLooking forward to your reply.\n\nBest regards, Alexander",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Verify that no terms or clauses are shared with unauthorized parties."
+    },
+    {
+        "date_time": "2025-12-19 17:30:00-08:00",
+        "subject": "Finalizing the Deal \u00e2\u20ac\u201c Immediate Approval Needed",
+        "body": "Dear Sarah,\n\nI\u00e2\u20ac\u2122m writing to inform you that the deal we discussed is almost finalized. However, there\u00e2\u20ac\u2122s one last thing we need to handle. Please review the attached agreement and approve it as soon as possible. It\u00e2\u20ac\u2122s important we do not delay this. Once approved, I will take care of the next steps.\n\nPlease let me know when you can provide approval.\n\nBest regards, Samuel",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Verify authenticity of the deal and ensure approval is within company protocols."
+    },
+    {
+        "date_time": "2025-12-19 18:00:00-08:00",
+        "subject": "Private Meeting \u00e2\u20ac\u201c Financial Discussion",
+        "body": "Dear Oliver,\n\nI would like to schedule a private meeting to discuss a few financial matters that could affect our portfolio. This will be a confidential meeting, so please ensure you\u00e2\u20ac\u2122re available for a one-on-one discussion. Let me know your availability for the next few days, and we\u00e2\u20ac\u2122ll set something up.\n\nLooking forward to your response.\n\nBest regards, Caroline",
+        "classification": "Secrecy",
+        "confidential_score": 8,
+        "action_guidance": "Flag as 'Secrecy'. Verify purpose of private discussion and ensure no unauthorized sharing of financial data."
+    },
+    {
+        "date_time": "2025-12-19 18:30:00-08:00",
+        "subject": "Re: Confidential Client Information",
+        "body": "Dear Jessica,\n\nI wanted to touch base regarding a sensitive client matter. As we discussed, I\u00e2\u20ac\u2122ve attached the confidential documents that need your immediate review. Once you\u00e2\u20ac\u2122ve had a chance to look them over, please confirm that you\u00e2\u20ac\u2122ll handle them privately and not share any details with anyone else.\n\nThanks for your discretion on this.\n\nBest regards, Jonathan",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Ensure client confidentiality is maintained and no unauthorized disclosure occurs."
+    },
+    {
+        "date_time": "2025-12-19 19:00:00-08:00",
+        "subject": "Re: Investment Opportunity \u00e2\u20ac\u201c Time-Sensitive",
+        "body": "Dear Caroline,\n\nI\u00e2\u20ac\u2122m writing to update you on an urgent investment opportunity. The opportunity could greatly benefit our portfolio, but I can only provide details once I\u00e2\u20ac\u2122ve received your confirmation to proceed. Please review the attached document and let me know if you\u00e2\u20ac\u2122re on board.\n\nBest regards, Michael",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Manipulation/Misconduct'. Review if there\u00e2\u20ac\u2122s an intent to gain unfair advantage or insider information."
+    },
+    {
+        "date_time": "2025-12-19 19:30:00-08:00",
+        "subject": "Urgent: Confidential Financial Transaction",
+        "body": "Dear Priya,\n\nI hope you're doing well. I\u00e2\u20ac\u2122m reaching out because we have a time-sensitive financial transaction that requires immediate approval. There are some sensitive details I can\u00e2\u20ac\u2122t share over email, but I need you to approve the attached document right away. Please ensure no one else is involved in this matter. The sooner we finalize this, the better.\n\nLet me know once you\u00e2\u20ac\u2122ve signed it.\n\nBest regards, Amit",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Verify the legitimacy of the financial transaction and ensure that the approval is within company policies."
+    },
+    {
+        "date_time": "2025-12-19 20:00:00-08:00",
+        "subject": "Market Analysis Report \u00e2\u20ac\u201c Exclusive Access",
+        "body": "Dear Emily,\n\nI wanted to provide you with an exclusive market analysis that could be valuable for our next steps. This is not for public distribution, so please keep it to yourself. It contains critical insights that are not yet available to the general team. Once you\u00e2\u20ac\u2122ve reviewed it, please confirm if you'd like to act on it.\n\nLooking forward to your response.\n\nBest, Jonathan",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 8,
+        "action_guidance": "Flag as 'Market Manipulation/Misconduct'. Check if the report involves undisclosed or non-public information."
+    },
+    {
+        "date_time": "2025-12-19 20:30:00-08:00",
+        "subject": "Re: Sensitive Client Information - Immediate Attention Required",
+        "body": "Dear Mark,\n\nI need your assistance with some sensitive client information. This data is confidential, so please ensure that no one else has access to it. I\u00e2\u20ac\u2122ve attached the file for your review, and once you\u00e2\u20ac\u2122ve gone through it, I\u00e2\u20ac\u2122ll need you to act on it immediately. Let me know once you\u00e2\u20ac\u2122ve taken care of everything.\n\nBest regards, Natalie",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Ensure no unauthorized access to confidential client information. Verify actions taken."
+    },
+    {
+        "date_time": "2025-12-19 21:00:00-08:00",
+        "subject": "Private Transaction - No Need for Formal Reporting",
+        "body": "Dear Rachel,\n\nI need you to help me with a private financial transaction. This is not something we need to report to management yet, as it\u00e2\u20ac\u2122s a personal matter. Once completed, I\u00e2\u20ac\u2122ll take care of everything on my side. Please send the funds to the account details I\u00e2\u20ac\u2122ll provide. Don\u00e2\u20ac\u2122t mention this to anyone.\n\nBest, Marcus",
+        "classification": "Employee Ethics",
+        "confidential_score": 10,
+        "action_guidance": "Flag as 'Employee Ethics'. Immediate investigation required for potential misuse of company resources or illicit behavior."
+    },
+    {
+        "date_time": "2025-12-19 21:30:00-08:00",
+        "subject": "Re: Finalizing Confidential Investment Agreement",
+        "body": "Dear Samantha,\n\nI\u00e2\u20ac\u2122ve attached the final draft of the investment agreement we discussed. Please review it and sign it as soon as possible. Time is critical, and I need to ensure that no one else is involved in the decision-making process. Once signed, I\u00e2\u20ac\u2122ll initiate the transfer as we agreed. Please do not discuss this with anyone.\n\nBest regards, Linda",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Ensure no unauthorized disclosure of the confidential agreement. Verify signature process."
+    },
+    {
+        "date_time": "2025-12-19 22:00:00-08:00",
+        "subject": "Urgent: Confidential Deal \u00e2\u20ac\u201c Your Signature Needed",
+        "body": "Dear John,\n\nI need your signature on the confidential deal we discussed. The document is attached, and it needs to be returned as soon as possible. This is a high-priority deal, and no one else can know about it at this stage. Once signed, I\u00e2\u20ac\u2122ll handle the next steps.\n\nPlease let me know when you can sign it.\n\nBest regards, Mark",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Confirm the legitimacy of the deal and review the confidentiality terms."
+    },
+    {
+        "date_time": "2025-12-19 22:30:00-08:00",
+        "subject": "Re: Update on Private Investment Opportunity",
+        "body": "Dear William,\n\nI\u00e2\u20ac\u2122m writing to update you on the private investment opportunity we discussed. Please let me know if you\u00e2\u20ac\u2122re still interested, as I can provide the details, but we need to keep this very discreet for now. Once you confirm, I\u00e2\u20ac\u2122ll send the necessary documents for your signature.\n\nLooking forward to your response.\n\nBest, Catherine",
+        "classification": "Market Bribery",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Bribery'. Immediate review required to ensure there\u00e2\u20ac\u2122s no illegal activity involved."
+    },
+    {
+        "date_time": "2025-12-19 23:00:00-08:00",
+        "subject": "Private Investment Proposal \u00e2\u20ac\u201c No Disclosures Yet",
+        "body": "Dear Rachel,\n\nI need your immediate attention on a private investment proposal that has not been made public. This opportunity could be highly lucrative, but we need to keep it confidential for now. Please let me know if you\u00e2\u20ac\u2122re available to meet so we can discuss this further.\n\nBest regards, Michael",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 8,
+        "action_guidance": "Flag as 'Market Manipulation/Misconduct'. Investigate if the investment opportunity is being disclosed improperly."
+    },
+    {
+        "date_time": "2025-12-19 23:30:00-08:00",
+        "subject": "Re: Urgent Financial Help Needed",
+        "body": "Dear Priya,\n\nI hope all is well. I need your help with a personal matter. If you could transfer the funds as discussed, I would greatly appreciate it. This is a private transaction, and I would prefer it not to be discussed with anyone. Please confirm once you\u00e2\u20ac\u2122ve sent the money.\n\nBest regards, Daniel",
+        "classification": "Employee Ethics",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Employee Ethics'. Review to ensure this is not a misuse of company funds or unethical behavior."
+    },
+    {
+        "date_time": "2025-12-20 00:00:00-08:00",
+        "subject": "Private Market Strategy \u00e2\u20ac\u201c Need Immediate Approval",
+        "body": "Dear Emily,\n\nI hope you\u00e2\u20ac\u2122re doing well. We\u00e2\u20ac\u2122ve identified an exclusive market strategy that could result in significant gains for our portfolio. However, it\u00e2\u20ac\u2122s critical that we keep this information between us for now, as it hasn\u00e2\u20ac\u2122t been made public. Please review the attached document and let me know if you approve it. Once you confirm, I\u00e2\u20ac\u2122ll take care of the rest.\n\nBest regards, Samuel",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Manipulation/Misconduct'. Investigate whether this strategy has been disclosed inappropriately or violates market regulations."
+    },
+    {
+        "date_time": "2025-12-20 00:30:00-08:00",
+        "subject": "Urgent: Transaction Approval Needed",
+        "body": "Dear Rajesh,\n\nI need your approval on a financial transaction that\u00e2\u20ac\u2122s time-sensitive. We can\u00e2\u20ac\u2122t afford to wait for the regular approval channels. Please review the attached document and send me your approval by tomorrow morning. I\u00e2\u20ac\u2122ll take care of the rest on my side. We need to keep this between us for now, as it\u00e2\u20ac\u2122s not yet ready for broader discussion.\n\nBest, Priya",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Verify the authenticity of the transaction and ensure no unauthorized disclosure."
+    },
+    {
+        "date_time": "2025-12-20 01:00:00-08:00",
+        "subject": "Re: Confidential Report \u00e2\u20ac\u201c Immediate Review Needed",
+        "body": "Dear Jessica,\n\nI\u00e2\u20ac\u2122m sending over a confidential market analysis report for your review. As discussed, this contains critical information that\u00e2\u20ac\u2122s not for public knowledge. Please read through the report and let me know if you need any clarifications. Once you\u00e2\u20ac\u2122ve reviewed it, I\u00e2\u20ac\u2122ll need your approval to proceed.\n\nBest regards, Jonathan",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Review report for sensitive information that could be improperly disclosed."
+    },
+    {
+        "date_time": "2025-12-20 01:30:00-08:00",
+        "subject": "Exclusive Investment Opportunity \u00e2\u20ac\u201c Time-Sensitive",
+        "body": "Dear Michael,\n\nI wanted to bring an exclusive investment opportunity to your attention. The details are confidential, and I cannot share them publicly yet. However, I need your quick approval to proceed. This could yield high returns, and I\u00e2\u20ac\u2122m confident it will align with your financial goals. Please let me know if you want to discuss this further.\n\nBest, Catherine",
+        "classification": "Market Bribery",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Bribery'. Immediate escalation required to verify the legitimacy of the investment and ensure it adheres to company policies."
+    },
+    {
+        "date_time": "2025-12-20 02:00:00-08:00",
+        "subject": "Re: Confidential Legal Matter \u00e2\u20ac\u201c Quick Action Required",
+        "body": "Dear Mark,\n\nI need your immediate attention on a legal matter that could impact our operations. The documents I\u00e2\u20ac\u2122ve attached are time-sensitive and require your signature as soon as possible. Please sign them and return them to me directly. It\u00e2\u20ac\u2122s crucial that this stays confidential, so I trust you to handle it with discretion.\n\nBest regards, Robert",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Investigate if the legal matter involves unauthorized agreements or potential conflicts of interest."
+    },
+    {
+        "date_time": "2025-12-20 02:30:00-08:00",
+        "subject": "Private Transfer Request \u00e2\u20ac\u201c Discretion Needed",
+        "body": "Dear Rachel,\n\nI hope everything is going well. I need your help with a personal matter that requires immediate attention. Please transfer the funds as we discussed. This is a private transaction and should not be shared with anyone else. Once the transfer is complete, I\u00e2\u20ac\u2122ll take care of the rest.\n\nBest regards, Daniel",
+        "classification": "Employee Ethics",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Employee Ethics'. Investigate the possibility of financial misconduct or misuse of company funds."
+    },
+    {
+        "date_time": "2025-12-20 03:00:00-08:00",
+        "subject": "Re: Time-Sensitive Investment Deal \u00e2\u20ac\u201c Your Approval Needed",
+        "body": "Dear Thomas,\n\nI\u00e2\u20ac\u2122m writing to get your approval on a time-sensitive investment deal. This is an opportunity that has not yet been made public, so we need to keep it confidential. I\u00e2\u20ac\u2122ve attached the proposal for you to review. Please sign off on it as soon as you\u00e2\u20ac\u2122re able.\n\nBest regards, Samuel",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Ensure the deal is legitimate and does not violate confidentiality or legal protocols."
+    },
+    {
+        "date_time": "2025-12-20 03:30:00-08:00",
+        "subject": "Re: Confidential Investment Report \u00e2\u20ac\u201c Review Required",
+        "body": "Dear Alice,\n\nI wanted to send you a confidential investment report for your review. This document contains valuable insights that need to be kept between us. Please go through it and let me know your thoughts. Once you\u00e2\u20ac\u2122ve confirmed, we can proceed with the next steps.\n\nBest regards, George",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Ensure that no sensitive investment information is shared with unauthorized parties."
+    },
+    {
+        "date_time": "2025-12-20 04:00:00-08:00",
+        "subject": "Exclusive Deal \u00e2\u20ac\u201c Keep This Confidential",
+        "body": "Dear Fiona,\n\nI\u00e2\u20ac\u2122m writing to inform you about an exclusive deal that\u00e2\u20ac\u2122s not yet been made public. It could lead to significant financial benefits, but it\u00e2\u20ac\u2122s important that we keep this matter private for now. I\u00e2\u20ac\u2122ll share the details with you once you confirm your interest.\n\nBest regards, Brian",
+        "classification": "Market Bribery",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Bribery'. Review the legitimacy of the deal and investigate if there\u00e2\u20ac\u2122s a potential conflict of interest or bribery involved."
+    },
+    {
+        "date_time": "2025-12-20 04:30:00-08:00",
+        "subject": "Re: Private Financial Transaction \u00e2\u20ac\u201c Action Needed",
+        "body": "Dear Victoria,\n\nI hope this email finds you well. I need your assistance with a private financial transaction. Once the funds are transferred, I\u00e2\u20ac\u2122ll ensure you receive the promised compensation. Please do not discuss this with anyone at this time.\n\nBest regards, Michael",
+        "classification": "Employee Ethics",
+        "confidential_score": 10,
+        "action_guidance": "Flag as 'Employee Ethics'. Immediate investigation needed for misuse of company resources or fraudulent behavior."
+    },
+    {
+        "date_time": "2025-12-20 05:00:00-08:00",
+        "subject": "Re: Confidential Market Data \u00e2\u20ac\u201c Review Required",
+        "body": "Dear Natalie,\n\nI trust you are doing well. I\u00e2\u20ac\u2122ve attached some critical market data that we discussed earlier. This data is not to be shared with anyone else yet, as it contains proprietary insights. Once you\u00e2\u20ac\u2122ve reviewed it, let me know if we can proceed with the next steps.\n\nBest regards, James",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Ensure the data is not shared with unauthorized individuals and verify the legitimacy of the market insights."
+    },
+    {
+        "date_time": "2025-12-20 05:30:00-08:00",
+        "subject": "Urgent Investment Decision \u00e2\u20ac\u201c Keep It Confidential",
+        "body": "Dear Alexander,\n\nWe\u00e2\u20ac\u2122ve identified a potential investment that could result in significant returns. However, due to the sensitive nature of the deal, it must remain confidential for now. I\u00e2\u20ac\u2122ve attached the proposal for your review. Please let me know if you approve, and we\u00e2\u20ac\u2122ll finalize the details.\n\nBest, Emily",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Manipulation/Misconduct'. Investigate if the investment involves non-public information and ensure no insider trading."
+    },
+    {
+        "date_time": "2025-12-20 06:00:00-08:00",
+        "subject": "Private Financial Transaction \u00e2\u20ac\u201c Action Needed",
+        "body": "Dear Rajesh,\n\nI need your assistance with a private transaction. This involves a confidential financial matter that cannot be disclosed to anyone else. Please transfer the funds as we discussed, and I will ensure you are compensated for your help.\n\nBest regards, Samantha",
+        "classification": "Employee Ethics",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Employee Ethics'. Immediate investigation needed to check for potential misuse of company funds or unethical behavior."
+    },
+    {
+        "date_time": "2025-12-20 06:30:00-08:00",
+        "subject": "Re: Confidential Investment Opportunity \u00e2\u20ac\u201c Quick Approval Required",
+        "body": "Dear Michael,\n\nI\u00e2\u20ac\u2122m writing to you about an exclusive investment opportunity. This opportunity is very private, and I can\u00e2\u20ac\u2122t share details publicly just yet. If you\u00e2\u20ac\u2122re interested, please review the attached document and provide your approval. Once you confirm, we can proceed.\n\nBest, Jonathan",
+        "classification": "Market Bribery",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Bribery'. Ensure there is no conflict of interest or unethical incentives involved in the transaction."
+    },
+    {
+        "date_time": "2025-12-20 07:00:00-08:00",
+        "subject": "Re: Private Deal \u00e2\u20ac\u201c Approval Needed",
+        "body": "Dear Priya,\n\nI hope you're doing well. I\u00e2\u20ac\u2122ve come across a confidential deal that I think could be very beneficial for both of us. However, we need to keep this under wraps for now. Please let me know if you\u00e2\u20ac\u2122re on board, and I\u00e2\u20ac\u2122ll share the full details with you.\n\nBest regards, James",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Manipulation/Misconduct'. Review the deal and ensure it does not involve manipulation or insider trading."
+    },
+    {
+        "date_time": "2025-12-20 07:30:00-08:00",
+        "subject": "Urgent: Confidential Legal Matter \u00e2\u20ac\u201c Immediate Action Required",
+        "body": "Dear Jessica,\n\nThere\u00e2\u20ac\u2122s an urgent legal matter that requires your signature. The attached documents need to be signed immediately to avoid any potential delays. Please ensure that these are kept confidential, as they pertain to sensitive company matters. Let me know once you\u00e2\u20ac\u2122ve signed and returned them.\n\nBest regards, Robert",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Verify the documents for legitimacy and ensure they are not related to illegal or unauthorized agreements."
+    },
+    {
+        "date_time": "2025-12-20 08:00:00-08:00",
+        "subject": "Private Investment Proposal \u00e2\u20ac\u201c Review and Approval Needed",
+        "body": "Dear Alice,\n\nI\u00e2\u20ac\u2122m reaching out regarding a private investment proposal. This is an opportunity that hasn\u00e2\u20ac\u2122t been made public yet, and we need to keep it confidential for now. I\u00e2\u20ac\u2122ve attached the proposal for you to review. Once you\u00e2\u20ac\u2122ve looked it over, please let me know if you approve.\n\nBest regards, Daniel",
+        "classification": "Market Bribery",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Bribery'. Investigate if this investment opportunity is being shared improperly or could lead to bribery."
+    },
+    {
+        "date_time": "2025-12-20 08:30:00-08:00",
+        "subject": "Re: Time-Sensitive Transaction \u00e2\u20ac\u201c Immediate Approval Required",
+        "body": "Dear William,\n\nI hope all is well. We have a time-sensitive transaction that requires your immediate approval. I can\u00e2\u20ac\u2122t disclose full details via email, but I\u00e2\u20ac\u2122ve attached a document for your review. Please approve it so that we can proceed with the next steps.\n\nBest regards, Catherine",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Verify if the transaction is legitimate and ensure no unauthorized disclosure of information."
+    },
+    {
+        "date_time": "2025-12-20 09:00:00-08:00",
+        "subject": "Exclusive Investment Deal \u00e2\u20ac\u201c Confidential Review",
+        "body": "Dear Oliver,\n\nI\u00e2\u20ac\u2122ve come across an exclusive investment opportunity that could be highly profitable, but it\u00e2\u20ac\u2122s important that we keep this confidential for now. I\u00e2\u20ac\u2122ve attached the proposal for you to review. Once you\u00e2\u20ac\u2122ve confirmed your interest, we can proceed with the next steps.\n\nBest regards, Caroline",
+        "classification": "Market Bribery",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Bribery'. Review the proposal to ensure it does not involve unethical or illegal activities."
+    },
+    {
+        "date_time": "2025-12-20 09:30:00-08:00",
+        "subject": "Re: Private Financial Transfer \u00e2\u20ac\u201c Approval Needed",
+        "body": "Dear Mark,\n\nI\u00e2\u20ac\u2122m reaching out to ask for your approval on a private financial transfer. This transaction needs to remain confidential. Once the funds are transferred, I\u00e2\u20ac\u2122ll take care of everything on my end. Please confirm when the transfer has been completed.\n\nBest regards, Linda",
+        "classification": "Employee Ethics",
+        "confidential_score": 10,
+        "action_guidance": "Flag as 'Employee Ethics'. Immediate investigation required for potential misuse of company resources or personal gain from financial transactions."
+    },
+    {
+        "date_time": "2001-08-03 09:12:00-07:00",
+        "subject": "Follow-up on Yesterday\u00e2\u20ac\u2122s Call",
+        "body": "Raj,\n\nGood speaking with you yesterday. As discussed, let\u00e2\u20ac\u2122s hold off on looping anyone else in until we have more clarity. The numbers are directionally correct, but we can refine the messaging before anything is circulated more broadly.\n\nNo urgency from my side today. We\u00e2\u20ac\u2122ll reconnect once the dust settles.\n\nRegards,\nSteven",
+        "classification": "Secrecy",
+        "confidential_score": 6,
+        "action_guidance": "Monitor communication for delayed disclosure risks and assess whether material information is being selectively shared."
+    },
+    {
+        "date_time": "2001-08-10 14:41:00-07:00",
+        "subject": "Draft Notes for Internal Use",
+        "body": "Helen,\n\nSharing a preliminary draft of the internal notes. This version is strictly for discussion purposes and not intended for external circulation.\n\nA few assumptions may need to be softened before we finalize anything client-facing. Internally, we\u00e2\u20ac\u2122re aligned on where this is heading.\n\nLet\u00e2\u20ac\u2122s sync briefly tomorrow.\n\nBest,\nAndrew",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 7,
+        "action_guidance": "Review intent behind differing internal vs external narratives and assess compliance with disclosure standards."
+    },
+    {
+        "date_time": "2001-08-21 08:05:00-07:00",
+        "subject": "Re: Numbers for Q3",
+        "body": "Paul,\n\nI\u00e2\u20ac\u2122ve reviewed the Q3 numbers you sent over. There are a couple of line items that could raise questions if left as-is.\n\nIt might be better to adjust the presentation rather than the figures themselves. We can discuss specifics offline.\n\nThanks,\nMartin",
+        "classification": "Employee Ethics",
+        "confidential_score": 8,
+        "action_guidance": "Investigate potential intent to misrepresent financial performance and review offline communication references."
+    },
+    {
+        "date_time": "2001-09-02 11:27:00-07:00",
+        "subject": "Ahead of Tomorrow\u00e2\u20ac\u2122s Release",
+        "body": "Susan,\n\nBefore tomorrow\u00e2\u20ac\u2122s release goes out, I wanted to make sure we\u00e2\u20ac\u2122re comfortable with the timing. Market sentiment is fragile, and even small wording changes could have an outsized impact.\n\nLet\u00e2\u20ac\u2122s keep this tight and avoid unnecessary distribution until after close.\n\nRegards,\nKevin",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 9,
+        "action_guidance": "Escalate for review of potential intent to influence market reaction through timing and selective disclosure."
+    },
+    {
+        "date_time": "2001-09-15 16:58:00-07:00",
+        "subject": "Re: Confidential Materials",
+        "body": "Anita,\n\nReceived the materials. Thanks for sending them directly.\n\nI agree it\u00e2\u20ac\u2122s best not to store these on shared drives for now. I\u00e2\u20ac\u2122ll revert once I\u00e2\u20ac\u2122ve had a chance to go through everything in detail.\n\nBest,\nRohit",
+        "classification": "Secrecy",
+        "confidential_score": 7,
+        "action_guidance": "Assess handling of sensitive documents and verify whether data storage practices comply with policy."
+    },
+    {
+        "date_time": "2001-09-29 10:19:00-07:00",
+        "subject": "Quick Question",
+        "body": "Dan,\n\nHypothetically speaking, if someone were to take a position ahead of the next report, would that materially change how you frame the outlook?\n\nPurely academic at this point, but curious about your view.\n\nMark",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 10,
+        "action_guidance": "Immediate escalation required due to explicit reference to trading positions ahead of market-sensitive reports."
+    },
+    {
+        "date_time": "2001-10-04 07:44:00-07:00",
+        "subject": "Re: Arrangement",
+        "body": "Chris,\n\nEverything discussed still stands. Once this is finalized, there will be room to recognize the effort appropriately.\n\nNo need to document anything further at this stage.\n\nRegards,\nPhilip",
+        "classification": "Market Bribery",
+        "confidential_score": 9,
+        "action_guidance": "Escalate for investigation into potential quid-pro-quo or undisclosed incentive arrangements."
+    },
+    {
+        "date_time": "2001-10-18 13:06:00-07:00",
+        "subject": "Client Feedback",
+        "body": "Laura,\n\nClient feedback has been generally positive. A few concerns came up, but nothing that needs to be formally recorded yet.\n\nLet\u00e2\u20ac\u2122s see how the next cycle plays out before we take any action.\n\nThanks,\nBrian",
+        "classification": "Change in Communication",
+        "confidential_score": 5,
+        "action_guidance": "Log for monitoring and assess whether omission of client concerns could lead to compliance or reporting issues."
+    },
+    {
+        "date_time": "2001-11-06 08:18:00-07:00",
+        "subject": "Re: Talking Points",
+        "body": "Nikhil,\n\nThanks for sharing the talking points. Overall, they look fine. One suggestion would be to slightly downplay the volatility reference until after the call.\n\nInternally we know the drivers, but there\u00e2\u20ac\u2122s no need to invite unnecessary questions externally at this stage.\n\nLet\u00e2\u20ac\u2122s align before anything goes out.\n\nRegards,\nThomas",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 8,
+        "action_guidance": "Review for intent to selectively influence external messaging relative to known internal risks."
+    },
+    {
+        "date_time": "2001-11-14 17:02:00-07:00",
+        "subject": "Re: Access",
+        "body": "Meera,\n\nYou should now have access to the folder we discussed. I\u00e2\u20ac\u2122ve limited visibility for obvious reasons.\n\nPlease avoid downloading copies locally. We can revisit broader access once the situation stabilizes.\n\nThanks for being careful with this.\n\nBest,\nArjun",
+        "classification": "Secrecy",
+        "confidential_score": 7,
+        "action_guidance": "Assess whether access restrictions are justified and ensure data handling aligns with governance standards."
+    },
+    {
+        "date_time": "2001-11-22 09:39:00-07:00",
+        "subject": "Ahead of Close",
+        "body": "Brian,\n\nIf you\u00e2\u20ac\u2122re planning to circulate the note today, it may be better to wait until after close. Liquidity is thin and reactions could be exaggerated.\n\nNot a strong view, just something to keep in mind.\n\nMark",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 9,
+        "action_guidance": "Escalate due to timing-based guidance that could influence market behavior."
+    },
+    {
+        "date_time": "2001-12-03 15:11:00-08:00",
+        "subject": "Re: Documentation",
+        "body": "Elaine,\n\nLet\u00e2\u20ac\u2122s keep the documentation lightweight for now. A formal trail may not be necessary unless we\u00e2\u20ac\u2122re asked later.\n\nIf questions come up, we can always reconstruct the rationale.\n\nRegards,\nVictor",
+        "classification": "Employee Ethics",
+        "confidential_score": 9,
+        "action_guidance": "Investigate potential intent to avoid audit trails or formal accountability."
+    },
+    {
+        "date_time": "2001-12-11 10:26:00-08:00",
+        "subject": "Clarification",
+        "body": "Suresh,\n\nJust to clarify, the figures shared earlier were indicative rather than final. It would be preferable if those numbers weren\u00e2\u20ac\u2122t referenced verbatim going forward.\n\nWe\u00e2\u20ac\u2122ll provide a cleaner version once things settle.\n\nThanks,\nRavi",
+        "classification": "Change in Communication",
+        "confidential_score": 6,
+        "action_guidance": "Monitor for inconsistencies between preliminary and final figures and assess disclosure accuracy."
+    },
+    {
+        "date_time": "2001-12-19 18:47:00-08:00",
+        "subject": "Re: Next Steps",
+        "body": "Oliver,\n\nEverything is lined up on my end. Once this clears, there will be room to revisit compensation adjustments as discussed.\n\nNo action required from you right now.\n\nRegards,\nStephen",
+        "classification": "Market Bribery",
+        "confidential_score": 8,
+        "action_guidance": "Review for implicit incentive linkage tied to prior actions or decisions."
+    },
+    {
+        "date_time": "2002-01-07 07:58:00-08:00",
+        "subject": "Client Sentiment",
+        "body": "Hannah,\n\nClient sentiment is mixed, but nothing alarming enough to escalate formally. A few concerns are better handled informally for now.\n\nWe can reassess if the noise increases.\n\nBest,\nDaniel",
+        "classification": "Complaints",
+        "confidential_score": 5,
+        "action_guidance": "Track recurring client concerns and verify whether informal handling bypasses complaint reporting requirements."
+    },
+    {
+        "date_time": "2002-01-16 12:34:00-08:00",
+        "subject": "Quick Thought",
+        "body": "Jason,\n\nPurely hypothetical, but if exposure were adjusted slightly before the next release, it could smooth the optics.\n\nNo recommendation here, just an observation.\n\n\u00e2\u20ac\u201dM",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 10,
+        "action_guidance": "Immediate escalation required due to suggestion of position adjustment to influence reported outcomes."
+    },
+    {
+        "date_time": "2025-12-20 10:00:00-08:00",
+        "subject": "Re: Urgent Private Transaction \u00e2\u20ac\u201c Action Needed",
+        "body": "Dear Emily,\n\nI hope you're doing well. I need your help with a private transaction. This is personal, so I\u00e2\u20ac\u2122d like to keep it confidential. Once you complete the transfer, I\u00e2\u20ac\u2122ll handle the rest. Please make sure no one else is involved. Let me know once you\u00e2\u20ac\u2122ve completed the transaction.\n\nBest regards, Daniel",
+        "classification": "Employee Ethics",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Employee Ethics'. Investigate the request for any misuse of company resources or unauthorized personal transactions."
+    },
+    {
+        "date_time": "2025-12-20 10:30:00-08:00",
+        "subject": "Exclusive Investment Opportunity \u00e2\u20ac\u201c No Sharing",
+        "body": "Dear Rajesh,\n\nI hope you're well. There\u00e2\u20ac\u2122s an exclusive investment opportunity that I can\u00e2\u20ac\u2122t share with anyone else at this stage. It could lead to significant returns, but we need to keep it under wraps for now. I\u00e2\u20ac\u2122m sending the details in a separate email. Once you confirm, we can proceed.\n\nBest regards, Karen",
+        "classification": "Market Bribery",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Bribery'. Ensure the opportunity is not being shared inappropriately, and investigate if any conflicts of interest are present."
+    },
+    {
+        "date_time": "2025-12-20 11:00:00-08:00",
+        "subject": "Re: Confidential Agreement \u00e2\u20ac\u201c Signature Needed",
+        "body": "Dear Olivia,\n\nAs discussed, I\u00e2\u20ac\u2122ve attached the final version of the agreement. Please review and sign it at your earliest convenience. The details are confidential, and it\u00e2\u20ac\u2122s important that we keep this between us for now. Once signed, I\u00e2\u20ac\u2122ll send over the next steps.\n\nBest regards, Michael",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Investigate if the agreement is legitimate and ensure that no sensitive details are shared improperly."
+    },
+    {
+        "date_time": "2025-12-20 11:30:00-08:00",
+        "subject": "Re: Private Market Deal \u00e2\u20ac\u201c Approval Required",
+        "body": "Dear Samantha,\n\nI\u00e2\u20ac\u2122ve come across a private market deal that needs to be finalized quickly. I\u00e2\u20ac\u2122ve attached the necessary documents for your review. This needs to stay confidential for now, and I\u00e2\u20ac\u2122m relying on you to act quickly. Please confirm once you\u00e2\u20ac\u2122ve reviewed and approved the deal.\n\nBest regards, Jonathan",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Manipulation/Misconduct'. Ensure there is no illegal activity or improper market disclosure involved in the deal."
+    },
+    {
+        "date_time": "2025-12-20 12:00:00-08:00",
+        "subject": "Urgent: Confidential Financial Transaction",
+        "body": "Dear Mark,\n\nI need your immediate help with a confidential financial transaction. Please ensure that no one else is aware of this. Once you complete the transfer, I\u00e2\u20ac\u2122ll make sure everything is settled on my side. Let me know once the transfer has been completed.\n\nBest regards, Peter",
+        "classification": "Employee Ethics",
+        "confidential_score": 10,
+        "action_guidance": "Flag as 'Employee Ethics'. Investigate for any misuse of company funds or financial misconduct."
+    },
+    {
+        "date_time": "2025-12-20 12:30:00-08:00",
+        "subject": "Private Investment Proposal \u00e2\u20ac\u201c Immediate Action Needed",
+        "body": "Dear Priya,\n\nI hope you\u00e2\u20ac\u2122re doing well. I\u00e2\u20ac\u2122m writing to inform you about a private investment opportunity that is time-sensitive. Please review the attached proposal and let me know if you\u00e2\u20ac\u2122d like to proceed. It\u00e2\u20ac\u2122s critical that this is kept confidential for now, as we are still finalizing the details.\n\nBest regards, Samuel",
+        "classification": "Market Bribery",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Bribery'. Verify the legitimacy of the investment and investigate for potential bribery or conflict of interest."
+    },
+    {
+        "date_time": "2025-12-20 13:00:00-08:00",
+        "subject": "Re: Confidential Transaction Details \u00e2\u20ac\u201c Immediate Action",
+        "body": "Dear Jessica,\n\nI need your urgent attention on this confidential transaction. Once the funds are transferred, we will finalize the deal. This is a private matter, and it\u00e2\u20ac\u2122s crucial that no one else is involved. Please confirm once you\u00e2\u20ac\u2122ve transferred the amount.\n\nBest regards, Karen",
+        "classification": "Employee Ethics",
+        "confidential_score": 10,
+        "action_guidance": "Flag as 'Employee Ethics'. Immediate investigation needed to ensure this is not a misuse of company resources or financial misconduct."
+    },
+    {
+        "date_time": "2025-12-20 13:30:00-08:00",
+        "subject": "Re: Confidential Business Agreement \u00e2\u20ac\u201c Sign and Return",
+        "body": "Dear Rachel,\n\nI\u00e2\u20ac\u2122ve attached the final version of the business agreement. Please review it and sign it at your earliest convenience. This agreement contains sensitive information that needs to be kept confidential until further notice. Once signed, please send it back to me directly.\n\nBest regards, Robert",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Ensure the legitimacy of the business agreement and verify confidentiality clauses."
+    },
+    {
+        "date_time": "2025-12-20 14:00:00-08:00",
+        "subject": "Re: Urgent Market Opportunity \u00e2\u20ac\u201c Review and Approve",
+        "body": "Dear John,\n\nI\u00e2\u20ac\u2122m writing to inform you of an urgent market opportunity that requires your approval. The details are confidential for now, so I\u00e2\u20ac\u2122ll need your discretion in reviewing the attached document. Once you approve, we can proceed with the next steps.\n\nBest regards, Catherine",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Manipulation/Misconduct'. Investigate for any insider trading or undisclosed market information."
+    },
+    {
+        "date_time": "2025-12-20 14:30:00-08:00",
+        "subject": "Private Transaction Request \u00e2\u20ac\u201c Discretion Required",
+        "body": "Dear Mark,\n\nI\u00e2\u20ac\u2122m in a bit of a bind and need your help with a private transaction. This is personal, so I\u00e2\u20ac\u2122d prefer to keep it confidential. Once you transfer the funds, I\u00e2\u20ac\u2122ll handle everything on my side. Please confirm once you\u00e2\u20ac\u2122ve completed the transaction.\n\nBest regards, Daniel",
+        "classification": "Employee Ethics",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Employee Ethics'. Investigate potential misuse of company funds or unethical behavior."
+    },
+    {
+        "date_time": "2025-12-20 15:00:00-08:00",
+        "subject": "Re: Time-Sensitive Private Transaction",
+        "body": "Dear Rachel,\n\nI hope you are doing well. I need your assistance with a time-sensitive personal transaction. This is something that needs to remain confidential, as we cannot afford any exposure. Once you complete the transfer, I\u00e2\u20ac\u2122ll make sure everything is handled from my end. Let me know when the funds have been transferred.\n\nBest regards, Michael",
+        "classification": "Employee Ethics",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Employee Ethics'. Investigate for misuse of company funds or unethical transactions."
+    },
+    {
+        "date_time": "2025-12-20 15:30:00-08:00",
+        "subject": "Re: Exclusive Investment Opportunity",
+        "body": "Dear Oliver,\n\nI hope you\u00e2\u20ac\u2122re doing well. I\u00e2\u20ac\u2122ve identified an exclusive investment opportunity that I believe will be highly beneficial for our portfolio. This deal is private, so please do not share the details with anyone else at this stage. Review the attached document and confirm if you would like to proceed. We can\u00e2\u20ac\u2122t afford any delays.\n\nBest regards, Emily",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Manipulation/Misconduct'. Investigate whether any confidential information is being used to gain an unfair market advantage."
+    },
+    {
+        "date_time": "2025-12-20 16:00:00-08:00",
+        "subject": "Re: Finalizing Confidential Deal",
+        "body": "Dear Daniel,\n\nAs we discussed earlier, the deal we\u00e2\u20ac\u2122re finalizing is highly confidential and needs to be signed immediately. I trust that you will handle this discreetly, as it involves sensitive terms that must remain between us. Once you sign the document, we can proceed with the next phase.\n\nBest regards, Caroline",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Ensure the deal\u00e2\u20ac\u2122s legitimacy and confirm that sensitive details are protected."
+    },
+    {
+        "date_time": "2025-12-20 16:30:00-08:00",
+        "subject": "Re: Personal Transaction Request",
+        "body": "Dear Jessica,\n\nI hope all is well. I need your assistance with a personal transaction that cannot be disclosed to anyone else at this time. This is urgent, and once the funds are transferred, I will handle the remaining details. Please let me know when the transfer has been completed.\n\nBest regards, Samuel",
+        "classification": "Employee Ethics",
+        "confidential_score": 10,
+        "action_guidance": "Flag as 'Employee Ethics'. Investigate potential abuse of company resources for personal financial gain."
+    },
+    {
+        "date_time": "2025-12-20 17:00:00-08:00",
+        "subject": "Private Investment Proposal \u00e2\u20ac\u201c Your Review Needed",
+        "body": "Dear Priya,\n\nI\u00e2\u20ac\u2122ve come across a private investment proposal that requires your immediate review. The details are confidential, and I need your approval to proceed. This deal could bring substantial returns, but it\u00e2\u20ac\u2122s essential that we keep it under wraps for now. Once you approve, we can move forward.\n\nBest regards, Thomas",
+        "classification": "Market Bribery",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Bribery'. Review the investment for potential bribery or conflict of interest."
+    },
+    {
+        "date_time": "2025-12-20 17:30:00-08:00",
+        "subject": "Re: Finalizing Confidential Business Agreement",
+        "body": "Dear Mark,\n\nI hope you\u00e2\u20ac\u2122re doing well. As we discussed, I\u00e2\u20ac\u2122ve attached the final version of the business agreement. Please ensure that the agreement remains confidential and is not shared with anyone else. Once signed, we can finalize the details.\n\nBest regards, Caroline",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Confirm that the business agreement is legitimate and no unauthorized parties have access to sensitive information."
+    },
+    {
+        "date_time": "2025-12-20 18:00:00-08:00",
+        "subject": "Re: Time-Sensitive Investment Decision",
+        "body": "Dear William,\n\nI\u00e2\u20ac\u2122m writing to inform you about a time-sensitive investment opportunity. The opportunity is exclusive, and I need your immediate approval to proceed. I\u00e2\u20ac\u2122ve attached the necessary documents for your review. Please let me know if you are on board.\n\nBest regards, Rachel",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Manipulation/Misconduct'. Investigate if insider information is being used improperly to secure an advantage."
+    },
+    {
+        "date_time": "2025-12-20 18:30:00-08:00",
+        "subject": "Private Transaction Details \u00e2\u20ac\u201c Your Approval Needed",
+        "body": "Dear Emily,\n\nI need your urgent attention on a private transaction that needs to be completed by the end of the day. This is something that should not be discussed with anyone else, so I trust you to handle it with discretion. Once the transaction is completed, let me know immediately.\n\nBest regards, James",
+        "classification": "Employee Ethics",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Employee Ethics'. Review the situation to ensure that the transaction is legitimate and does not involve unethical use of company funds."
+    },
+    {
+        "date_time": "2025-12-20 19:00:00-08:00",
+        "subject": "Re: Urgent: Confidential Business Deal",
+        "body": "Dear Thomas,\n\nI need your signature on the confidential business deal we discussed. The deal is time-sensitive, and I can\u00e2\u20ac\u2122t disclose further details at this stage. Please review and sign the document at your earliest convenience, and return it directly to me.\n\nBest regards, Caroline",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Verify the authenticity of the deal and investigate whether it involves any unauthorized parties or improper disclosure."
+    },
+    {
+        "date_time": "2025-12-20 19:30:00-08:00",
+        "subject": "Exclusive Financial Opportunity \u00e2\u20ac\u201c Review Required",
+        "body": "Dear Rachel,\n\nI have an exclusive financial opportunity that requires your immediate attention. The details are confidential, and I need your approval before I can move forward. Please review the attached documents, and let me know if you\u00e2\u20ac\u2122re interested in proceeding.\n\nBest regards, William",
+        "classification": "Market Bribery",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Bribery'. Investigate for any undue influence or unethical conduct related to the investment opportunity."
+    },
+    {
+        "date_time": "2025-12-20 20:00:00-08:00",
+        "subject": "Re: Time-Critical Investment Opportunity",
+        "body": "Dear Priya,\n\nI hope you're doing well. I\u00e2\u20ac\u2122m writing to bring your attention to a time-critical investment opportunity. I can\u00e2\u20ac\u2122t share the details publicly yet, but I need your approval to proceed immediately. Please review the attached document, and let me know if you\u00e2\u20ac\u2122re ready to move forward.\n\nBest regards, Catherine",
+        "classification": "Market Bribery",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Bribery'. Investigate for possible bribery or illegal inducement to act on this deal."
+    },
+    {
+        "date_time": "2025-12-20 20:30:00-08:00",
+        "subject": "Private Financial Transfer Request \u00e2\u20ac\u201c Approval Needed",
+        "body": "Dear Mark,\n\nI\u00e2\u20ac\u2122m reaching out for your approval on a private financial transaction that needs to be processed today. This matter is confidential, and I\u00e2\u20ac\u2122d appreciate it if you could handle this discreetly. Once the transfer is completed, I\u00e2\u20ac\u2122ll ensure the process is finalized. Please let me know once done.\n\nBest regards, Daniel",
+        "classification": "Employee Ethics",
+        "confidential_score": 10,
+        "action_guidance": "Flag as 'Employee Ethics'. Immediate review needed to verify if the transfer is legitimate and ethically sound."
+    },
+    {
+        "date_time": "2025-12-20 21:00:00-08:00",
+        "subject": "Re: Private Investment Proposal \u00e2\u20ac\u201c Immediate Action",
+        "body": "Dear Sarah,\n\nI\u00e2\u20ac\u2122m reaching out to get your approval for a private investment opportunity. This deal is confidential, and I cannot share further details through email. Please review the attached proposal, and let me know if you\u00e2\u20ac\u2122re on board to proceed. Time is of the essence here.\n\nBest regards, Michael",
+        "classification": "Market Manipulation/Misconduct",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Manipulation/Misconduct'. Investigate if the opportunity is a form of insider trading or involves undisclosed material information."
+    },
+    {
+        "date_time": "2025-12-20 21:30:00-08:00",
+        "subject": "Confidential Contract \u00e2\u20ac\u201c Signature Needed",
+        "body": "Dear Oliver,\n\nI hope you are doing well. As we discussed earlier, I\u00e2\u20ac\u2122ve attached the final version of the contract that requires your signature. The details of this agreement are sensitive, and I trust you will handle it discreetly. Once signed, please return it to me directly, and we can proceed with the next steps.\n\nBest regards, Jonathan",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Verify the legitimacy of the contract and ensure that no sensitive information is being misused or shared with unauthorized parties."
+    },
+    {
+        "date_time": "2025-12-20 22:00:00-08:00",
+        "subject": "Re: Immediate Action Required \u00e2\u20ac\u201c Confidential Deal",
+        "body": "Dear Jessica,\n\nI\u00e2\u20ac\u2122m writing to request your immediate attention on a confidential deal that must be finalized today. Please review the attached documents and sign them at your earliest convenience. This deal must remain between us for now, as it involves sensitive company information.\n\nBest regards, Samuel",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Ensure no unauthorized access to the confidential deal and verify the legitimacy of the documents."
+    },
+    {
+        "date_time": "2025-12-20 22:30:00-08:00",
+        "subject": "Re: Private Funds Transfer \u00e2\u20ac\u201c Discretion Required",
+        "body": "Dear Mark,\n\nI hope all is well. I\u00e2\u20ac\u2122m requesting your assistance with a private funds transfer. This matter must be kept confidential, so I trust you\u00e2\u20ac\u2122ll handle it with discretion. Once the transfer is complete, let me know, and I\u00e2\u20ac\u2122ll take care of the remaining details.\n\nBest regards, Robert",
+        "classification": "Employee Ethics",
+        "confidential_score": 10,
+        "action_guidance": "Flag as 'Employee Ethics'. Investigate potential misuse of company funds or financial misconduct."
+    },
+    {
+        "date_time": "2025-12-20 23:00:00-08:00",
+        "subject": "Re: Confidential Investment Opportunity \u00e2\u20ac\u201c Urgent Response Needed",
+        "body": "Dear Victoria,\n\nI\u00e2\u20ac\u2122m reaching out to inform you about a confidential investment opportunity. It\u00e2\u20ac\u2122s important that we keep this under wraps for now, as it\u00e2\u20ac\u2122s not yet public. I\u00e2\u20ac\u2122ve attached the proposal for your review. Please let me know if you\u00e2\u20ac\u2122re interested in proceeding, and we can move forward.\n\nBest regards, Thomas",
+        "classification": "Market Bribery",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Market Bribery'. Review the opportunity to ensure that it\u00e2\u20ac\u2122s not related to bribery or other unethical practices."
+    },
+    {
+        "date_time": "2025-12-20 23:30:00-08:00",
+        "subject": "Urgent Financial Assistance Request \u00e2\u20ac\u201c Confidentiality Required",
+        "body": "Dear William,\n\nI need your help with a private financial matter. The transaction must remain confidential for now, and I trust you will handle it discreetly. Once completed, I\u00e2\u20ac\u2122ll ensure everything is sorted on my end. Please confirm once you\u00e2\u20ac\u2122ve made the transfer.\n\nBest regards, Linda",
+        "classification": "Employee Ethics",
+        "confidential_score": 10,
+        "action_guidance": "Flag as 'Employee Ethics'. Immediate investigation needed to ensure that this is not a case of financial misconduct."
+    },
+    {
+        "date_time": "2025-12-20 23:45:00-08:00",
+        "subject": "Re: Private Financial Transaction \u00e2\u20ac\u201c Signature Required",
+        "body": "Dear Rachel,\n\nAs discussed, I\u00e2\u20ac\u2122m requesting your signature on the confidential financial transaction agreement. Once signed, please send it back directly to me. This deal should remain between us, as it involves sensitive financial details.\n\nBest regards, Jonathan",
+        "classification": "Secrecy",
+        "confidential_score": 9,
+        "action_guidance": "Flag as 'Secrecy'. Investigate the validity of the financial transaction and ensure no sensitive information is being disclosed improperly."
+    }
+]
