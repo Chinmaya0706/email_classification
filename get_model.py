@@ -1,6 +1,7 @@
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain_core.output_parsers import StrOutputParser
 from dotenv import load_dotenv
+from langchain_groq import ChatGroq
 import streamlit as st
 import os
 
@@ -25,22 +26,20 @@ def get_api_key()->str:
 
 @st.cache_resource
 def get_embedding_model()->GoogleGenerativeAIEmbeddings:
-    api_key = get_api_key()
+    # api_key = get_api_key()
         
     return GoogleGenerativeAIEmbeddings(
         # model="models/gemini-embedding-001",
         model = 'models/text-embedding-004',
-        google_api_key=api_key
+        google_api_key=st.secrets["GOOGLE_API_KEY"]
     )
 
 @st.cache_resource
 def get_chat_model()->tuple[GoogleGenerativeAIEmbeddings, StrOutputParser]:
     api_key = get_api_key()
-    model = ChatGoogleGenerativeAI(
-        model = "gemini-2.5-flash-lite",
-        temperature=0.5,
-        # max_output_tokens=1500,
-        google_api_key = api_key
-        
+    model = ChatGroq(
+        temperature=0.7, 
+        model_name="moonshotai/kimi-k2-instruct-0905", # Or "mixtral-8x7b-32768"
+        groq_api_key=st.secrets["GROQ_API_KEY"]
     )
     return model, StrOutputParser()

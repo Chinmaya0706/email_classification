@@ -16,7 +16,7 @@ def splitting_emails(email_prompt=None)->tuple[list[Document], dict]:
     all_child_lines_for_vectorDB = []
     child_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
         encoding_name="cl100k_base",
-        chunk_size=500, 
+        chunk_size=800, 
         chunk_overlap = 50,
     )
 
