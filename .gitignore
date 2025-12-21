@@ -1,3 +1,7 @@
 first.py
 ai
 .vscode
+.streamlit
+.streamlit/secrets.toml
+chroma_db
+__pycache__
