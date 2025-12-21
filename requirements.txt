@@ -1,0 +1,24 @@
+#langchain core
+langchain
+langchain-core
+langchain-community
+langchain-chroma
+pydantic
+pypdf
+
+
+#google gemini (PaLM) integration
+langchain-google-genai
+
+#Web interface
+streamlit
+
+
+#environment variable management
+python-dotenv
+
+
+#Vector database
+chromadb
+tiktoken
+langchain-chroma
