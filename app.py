@@ -59,7 +59,7 @@ with st.sidebar:
         )
 
 
-st.markdown("<h1 style='text-align: center;'>Classify Emails</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Emails classification</h1>", unsafe_allow_html=True)
 
 # Initialize session state
 if "messages" not in st.session_state:
