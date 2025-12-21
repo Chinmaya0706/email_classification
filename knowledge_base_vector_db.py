@@ -2,10 +2,13 @@ from langchain_classic.text_splitter import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 from langchain_chroma import Chroma
 from get_model import get_embedding_model
+from pathlib import Path
 import uuid
 import json
 
-with open(r'.\knowledge_data\knowledge_data.json', 'r') as file:
+current_dir = Path(__file__).parent
+file_path = current_dir / "knowledge_data" / "knowledge_data.json"
+with open(file_path, 'r') as file:
     emails = json.load(file)
 
 def splitting_emails(email_prompt=None)->tuple[list[Document], dict]:
