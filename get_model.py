@@ -14,7 +14,7 @@ def get_api_key():
         else:
             st.error("No API key is present")
     except Exception as e:
-            load_dotenv(dotenv_path=r'C:\Coding\python\DataScience\langchain\.env') # Load the .env file contents
+            load_dotenv(dotenv_path=r'.\.env') # Load the .env file contents
             api_key = os.getenv("GOOGLE_API_KEY")
 
     if not api_key:

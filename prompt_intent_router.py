@@ -4,7 +4,7 @@ from typing import Annotated, Literal
 from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path=r'C:\Coding\python\DataScience\langchain\.env')
+load_dotenv(dotenv_path=r'.\.env')
 class RouterDecision(BaseModel):
     """Classify the user input."""
     intent: Literal["EMAIL", "CHAT"] = Field(
