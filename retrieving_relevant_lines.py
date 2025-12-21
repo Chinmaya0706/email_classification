@@ -18,7 +18,7 @@ def get_relavant_lines(prompt:str, paragraph_store:dict):
 
     relavant_lines = vector_store.similarity_search_with_relevance_scores(
         prompt,
-        k=5
+        k=6
     )
     # print(relavant_lines)
     print(f"in relavant lines before parent id:")
@@ -28,8 +28,8 @@ def get_relavant_lines(prompt:str, paragraph_store:dict):
     parent_ids_to_fetch = set()
 
     for doc, score in relavant_lines:
-        if score >= 0.77:
-            parent_ids_to_fetch.add(doc.metadata["parent_id"])
+        # if score >= 0.77:
+        parent_ids_to_fetch.add(doc.metadata["parent_id"])
 
     final_paragraph_list_for_llm = []
 
