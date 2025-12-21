@@ -1,15 +1,16 @@
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
-# from langchain_core.output_parsers import StrOutputParser
 from langchain_chroma import Chroma
-from knowledge_base_vector_db import store_to_vector_db, splitting_emails
+from knowledge_base_vector_db import store_to_vector_db
 from retrieving_relevant_lines import get_relavant_lines 
 from personality_prompt import personality
 from prompt_intent_router import intent_router
 from get_model import get_chat_model
+from pathlib import Path
 import streamlit as st
 import time
-import copy
 
+current_dir = Path(__file__).parent
+persist_directory_path = current_dir / "chroma_db"
 def stream(content, delay):
     for chunk in content:
         yield chunk
@@ -53,7 +54,7 @@ if "message_history" not in st.session_state:
 
 if "paragraph_store_with_ids" not in st.session_state:
     vector_store = Chroma(
-        persist_directory=r".\chroma_db",
+        persist_directory=persist_directory_path,
         collection_name="email_classification"
     )
     vector_store.delete_collection()
@@ -133,7 +134,7 @@ if prompt := st.chat_input("Ask something!"):
                 3. **Evidence Citation:** In your final reasoning, explicitly reference similar past cases if they help prove the target email's intent.
             """        
             message_for_llm.append(SystemMessage(content=context_prompt))
-            # print(context_prompt)
+            print(context_prompt)
 
     message_for_llm.append(HumanMessage(content=prompt))
 

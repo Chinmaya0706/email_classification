@@ -2,14 +2,17 @@ from langchain_chroma import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from get_model import get_embedding_model
 from knowledge_base_vector_db import splitting_emails
+from pathlib import Path
 import streamlit as st
 
+current_dir = Path(__file__).parent
+persist_directory = current_dir / "chroma_db"
 def get_relavant_lines(prompt:str, paragraph_store:dict):
     
     embedding_function = get_embedding_model()
     vector_store = Chroma(
         embedding_function=embedding_function,
-        persist_directory=r".\chroma_db",
+        persist_directory=persist_directory,
         collection_name="email_classification"
     )
 
@@ -18,7 +21,9 @@ def get_relavant_lines(prompt:str, paragraph_store:dict):
         k=5
     )
     # print(relavant_lines)
-    # print(f"in relavant lines before parent id: {relavant_lines}")
+    print(f"in relavant lines before parent id:")
+    for document, score in relavant_lines:
+        print(document, score)
 
     parent_ids_to_fetch = set()
 

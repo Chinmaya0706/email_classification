@@ -5,7 +5,7 @@ import streamlit as st
 import os
 
 @st.cache_resource
-def get_api_key():
+def get_api_key()->str:
     try:
         api_key = None
         if "GOOGLE_API_KEY" in st.secrets:
@@ -14,7 +14,7 @@ def get_api_key():
         else:
             st.error("No API key is present")
     except Exception as e:
-            load_dotenv(dotenv_path=r'.\.env') # Load the .env file contents
+            load_dotenv() # Load the .env file contents
             api_key = os.getenv("GOOGLE_API_KEY")
 
     if not api_key:
