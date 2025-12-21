@@ -53,7 +53,7 @@ if "message_history" not in st.session_state:
 
 if "paragraph_store_with_ids" not in st.session_state:
     vector_store = Chroma(
-        persist_directory=r"C:\Coding\python\DataScience\langchain\chatBot\chroma_db",
+        persist_directory=r".\chroma_db",
         collection_name="email_classification"
     )
     vector_store.delete_collection()

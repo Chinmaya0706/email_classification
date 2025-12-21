@@ -9,7 +9,7 @@ def get_relavant_lines(prompt:str, paragraph_store:dict):
     embedding_function = get_embedding_model()
     vector_store = Chroma(
         embedding_function=embedding_function,
-        persist_directory=r"C:\Coding\python\DataScience\langchain\chatBot\chroma_db",
+        persist_directory=r".\chroma_db",
         collection_name="email_classification"
     )
 

@@ -5,7 +5,7 @@ from get_model import get_embedding_model
 import uuid
 import json
 
-with open(r'C:\Coding\python\DataScience\email_classification\knowledge_data\knowledge_data.json', 'r') as file:
+with open(r'.\knowledge_data\knowledge_data.json', 'r') as file:
     emails = json.load(file)
 
 def splitting_emails(email_prompt=None)->tuple[list[Document], dict]:
@@ -60,7 +60,7 @@ def store_to_vector_db(email_prompt=None)->None:
         vector_store = Chroma.from_documents(
             documents=all_child_lines_for_vectorDB,
             embedding = embedding_model,
-            persist_directory=r"C:\Coding\python\DataScience\langchain\chatBot\chroma_db",
+            persist_directory=r".\chroma_db",
             collection_name="email_classification"
         )
         print("vectores are successfully stored to vector db!!", vector_store)
@@ -73,7 +73,7 @@ if __name__ == '__main__':
     pass
     # store_to_vector_db()
     vector_store = Chroma(
-        persist_directory=r"C:\Coding\python\DataScience\langchain\chatBot\chroma_db",
+        persist_directory=r".\chroma_db",
         collection_name="email_classification"
     )
     vector_store.delete_collection()
