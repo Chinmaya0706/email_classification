@@ -9,6 +9,8 @@ pypdf
 
 #google gemini (PaLM) integration
 langchain-google-genai
+langchain-groq
+sentence-transformers
 
 #Web interface
 streamlit

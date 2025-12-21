@@ -35,5 +35,6 @@ def personality():
         "reason": "String (Explain WHY this is a violation, referencing the retrieved context if applicable)",
         "action_guidance": "String (Recommended next step for the human auditor)"
     }
+    **MANDATORY** : don't write as a raw json text, write as a JSON code like python dictionary with indentation which would be readable and look beautiful
     """
     return system_prompt
