@@ -39,7 +39,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
     layout="centered",
     page_icon="🤖",
-    page_title="JenaBot - The Smartest AI Assistant"
+    page_title="Email-classification"
 )
 
 if "chat_context" not in st.session_state:

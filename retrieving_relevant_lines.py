@@ -1,5 +1,6 @@
 from langchain_chroma import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_classic.text_splitter import RecursiveCharacterTextSplitter
 from get_model import get_embedding_model
 from knowledge_base_vector_db import splitting_emails
 from pathlib import Path
@@ -7,8 +8,17 @@ import streamlit as st
 
 current_dir = Path(__file__).parent
 persist_directory = current_dir / "chroma_db"
+# def prompt_chunking(prompt:str)->list:
+#     prompt_chunks = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
+#         encoding_name="cl100k_base",
+#         chunk_size=800, 
+#         chunk_overlap = 50,
+#     )
+#     print(prompt_chunks)
+
 def get_relavant_lines(prompt:str, paragraph_store:dict):
-    
+    # prompt_chunking(prompt=prompt)
+    # return
     embedding_function = get_embedding_model()
     vector_store = Chroma(
         embedding_function=embedding_function,
