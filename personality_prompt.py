@@ -25,7 +25,7 @@ def personality():
     - **Low Risk (Green, Score 0-49):** Innocent social chatter (Lunch, Holidays) or standard business operations.
 
     ### OUTPUT FORMAT (STRICT JSON) 
-    **MANDATORY**: If User asks any normal questions (Non email related any random questions, then reply with normal language, this rule NOT REQUIRED. It is MANDATORY!!!)
+    **MANDATORY**: If User asks any normal questions (Non email related or any random counter questions, then reply with normal language, this rule NOT REQUIRED. It is HIGHLY MANDATORY for response quality!!!)
     Structure:
     {
         "classification": Literal["Market Manipulation", "Secrecy/Leaks", "Market Bribery", "Complaints", "Ethics/Conduct"],
