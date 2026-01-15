@@ -6,3 +6,4 @@ ai
 chroma_db
 __pycache__
 .env
+practice.py

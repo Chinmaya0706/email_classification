@@ -16,7 +16,7 @@ def splitting_emails(email_prompt=None)->tuple[list[Document], dict]:
     all_child_lines_for_vectorDB = []
     child_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
         encoding_name="cl100k_base",
-        chunk_size=800, 
+        chunk_size=500, 
         chunk_overlap = 50,
     )
 
@@ -49,7 +49,7 @@ def splitting_emails(email_prompt=None)->tuple[list[Document], dict]:
     
     return all_child_lines_for_vectorDB, paragraph_store
 
-def store_to_vector_db(email_prompt=None)->None:
+def store_to_vector_db(type="EMAIL", email_prompt=None)->tuple[list, dict]:
     all_child_lines_for_vectorDB = []
     embedding_model = get_embedding_model()
     all_child_lines_for_vectorDB, paragraph_store = splitting_emails(email_prompt=email_prompt)
@@ -59,18 +59,19 @@ def store_to_vector_db(email_prompt=None)->None:
     #     all_child_lines_for_vectorDB, paragraph_store = splitting_emails()
     # for line in all_child_lines_for_vectorDB:
     #     print(line)
-    try:
-        vector_store = Chroma.from_documents(
-            documents=all_child_lines_for_vectorDB,
-            embedding = embedding_model,
-            persist_directory=r".\chroma_db",
-            collection_name="email_classification"
-        )
-        print("vectores are successfully stored to vector db!!", vector_store)
-        return paragraph_store
-    except Exception as embedding_error:
-        print(embedding_error)
+    if type == "EMAIL":
+        try:
+            vector_store = Chroma.from_documents(
+                documents=all_child_lines_for_vectorDB,
+                embedding = embedding_model,
+                persist_directory=r".\chroma_db",
+                collection_name="email_classification"
+            )
+            print("vectores are successfully stored to vector db!!", vector_store)
+        except Exception as embedding_error:
+            print(f"error while embedding: {embedding_error}")
 
+    return all_child_lines_for_vectorDB, paragraph_store
 
 if __name__ == '__main__':
     pass
