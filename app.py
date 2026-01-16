@@ -56,11 +56,25 @@ if "paragraph_store_with_ids" not in st.session_state:
 with st.sidebar:
     st.header("Upload Email CSV files")
     with st.container(border=False, height=450):
-        file_upload = st.file_uploader(label="upload only CSV files", type="csv", label_visibility="hidden")
+        
+        def reset_state():
+            """This is for clearing the session state after uploading a new file"""
+            keys = ["input_data", "processed_df"]
+            for key in keys:
+                if key in st.session_state:
+                    del st.session_state[key]
+
+        file_upload = st.file_uploader(
+            label="upload only CSV files", 
+            type="csv", 
+            label_visibility="hidden",
+            on_change=reset_state
+        )
         # print(f"name of csv file is : {file_upload}")
         # print(f"type of csv file is {type(file_upload)}")
 
         if file_upload:
+            
             original_name = file_upload.name
             new_filename = f"{os.path.splitext(original_name)[0]}_result.csv"
             if 'input_data' not in st.session_state:
@@ -77,7 +91,7 @@ with st.sidebar:
                     if "processed_df" not in st.session_state:
                         st.session_state.processed_df = csv_summary(
                             df=df, 
-                            knowledge_paragraph_store=st.session_state.paragraph_store_with_ids
+                            knowledge_paragraph_store=st.session_state.paragraph_store_with_ids,
                         )
 
             with col2:
@@ -146,19 +160,27 @@ if prompt := st.chat_input("Ask something!"):
     message_for_llm = st.session_state.message_history.copy()
 
     type_of_prompt = intent_router(user_input=prompt)
-    # print(type_of_prompt)
+    print(type_of_prompt)
+    
+    child_lines, paragraph_store_with_ids = store_to_vector_db(type=type_of_prompt, email_prompt = prompt)
     if type_of_prompt == 'EMAIL':
-        child_lines, paragraph_store_with_ids = store_to_vector_db(email_prompt = prompt)
         st.session_state.paragraph_store_with_ids |= paragraph_store_with_ids
-        paragraph_store_with_ids = st.session_state.paragraph_store_with_ids.copy()
-        final_paragraph_list_for_llm = get_relavant_lines(list_of_lines=child_lines, paragraph_store=paragraph_store_with_ids)
-        # for paragraph in final_paragraph_list_for_llm:
-        #     print(paragraph)
-        # print(type(final_paragraph_list_for_llm))
-        if final_paragraph_list_for_llm:
-            context_prompt = get_context(final_paragraph_list_for_llm)        
-            message_for_llm.append(SystemMessage(content=context_prompt))
+    paragraph_store_with_ids = st.session_state.paragraph_store_with_ids.copy()
+    final_paragraph_list_for_llm = get_relavant_lines(list_of_lines=child_lines, paragraph_store=paragraph_store_with_ids)
+    # for paragraph in final_paragraph_list_for_llm:
+    #     print(paragraph)
+    # print(type(final_paragraph_list_for_llm))
+    if final_paragraph_list_for_llm:
+        context_prompt = get_context(final_paragraph_list_for_llm, mode=type_of_prompt)        
+        message_for_llm.append(SystemMessage(content=context_prompt))
             # print(context_prompt)
+    #for printing purpose
+    if type_of_prompt == 'CHAT':
+        if final_paragraph_list_for_llm:
+            for paragraph in final_paragraph_list_for_llm:
+                print(paragraph, '\n')
+        else:
+            print("No final_paragraph_list_for_llm for this chat")
 
     message_for_llm.append(HumanMessage(content=prompt))
 
