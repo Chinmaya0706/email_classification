@@ -47,11 +47,11 @@ class output_format(BaseModel):
 model, parser = get_chat_model()
 structured_output_model = model.with_structured_output(output_format)
 
-def process_single_row(index:int, email_body:str, knowledge_paragraph_store:dict):
+def process_single_row(index:int, email_body:str, knowledge_paragraph_store:dict)->tuple:
     
     child_lines, paragraph_store = store_to_vector_db(email_prompt=email_body)
     # print(child_lines, paragraph_store)
-    knowledge_paragraph_store |= paragraph_store
+    # knowledge_paragraph_store |= paragraph_store
     final_paragraph_list_for_llm = get_relavant_lines(list_of_lines=child_lines, paragraph_store=knowledge_paragraph_store)
     # print(final_paragraph_list_for_llm)
     context_prompt = get_context(final_paragraph_list_for_llm=final_paragraph_list_for_llm)
@@ -62,7 +62,7 @@ def process_single_row(index:int, email_body:str, knowledge_paragraph_store:dict
     ]
     result = structured_output_model.invoke(message)
     # print(result)
-    return index, result
+    return index, result, paragraph_store
 
 def csv_summary(df:pd, knowledge_paragraph_store:dict):
     # df[["classification", "risk_score", "risk_level", "highlighted_evidence", "reason", "action_guidance"]] = None
@@ -82,14 +82,15 @@ def csv_summary(df:pd, knowledge_paragraph_store:dict):
                 process_single_row, 
                 index, 
                 row['body'],
-                knowledge_paragraph_store
+                knowledge_paragraph_store.copy(),
             ): index for index, row in df.iterrows()
         }
 
         count = 0
         for future in as_completed(future_to_row):
             try:
-                row_index, result = future.result()
+                row_index, result, paragraph_store = future.result()
+                knowledge_paragraph_store |= paragraph_store
                 df.at[row_index, "classification"] = result.classification
                 df.at[row_index, "risk_score"] = result.risk_score
                 df.at[row_index, "risk_level"] = result.risk_level

@@ -20,7 +20,7 @@ def get_relavant_lines(list_of_lines:list, paragraph_store:dict)->list:
     relavant_lines = []
     for line in list_of_lines:
         relavant_lines.extend(
-            vector_store.similarity_search(
+            vector_store.similarity_search_with_relevance_scores(
                 line.page_content,
                 k=6
             )
@@ -33,9 +33,9 @@ def get_relavant_lines(list_of_lines:list, paragraph_store:dict)->list:
 
     parent_ids_to_fetch = set()
 
-    for doc in relavant_lines:
-        # if score >= 0.77:
-        parent_ids_to_fetch.add(doc.metadata["parent_id"])
+    for doc, score in relavant_lines:
+        if score >= 0.80:
+            parent_ids_to_fetch.add(doc.metadata["parent_id"])
 
     final_paragraph_list_for_llm = []
 
