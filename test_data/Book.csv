@@ -1,0 +1,235 @@
+﻿subject,body,result
+Before Today’s Close,"Hi Kevin,
+
+If the update is ready, I’d recommend holding distribution until after market close.
+Liquidity is thin today and even small wording could cause an outsized reaction.
+
+Internally we’re aligned, so no real risk there.
+
+Let’s connect later.
+
+Mark","{
+  ""classification"": ""Market Manipulation/Misconduct"",
+  ""risk_level"": ""RED"",
+  ""confidential_score"": 9,
+  ""weight"": 9,
+  ""action_guidance"": ""Escalate. Review intent to delay disclosure to influence market reaction based on liquidity conditions.""
+}
+"
+Draft Term Sheet,"Hi Rohan,
+
+Attaching the draft term sheet for your review.
+Please keep this limited to our discussion until legal finalizes the language.
+
+No external sharing yet.
+
+Thanks,
+Amit
+","{
+  ""classification"": ""Secrecy"",
+  ""risk_level"": ""YELLOW"",
+  ""confidential_score"": 6,
+  ""weight"": 5,
+  ""action_guidance"": ""Monitor. Confirm confidentiality request aligns with standard legal review process.""
+}
+"
+Quick Help Needed,"Hi Sameer,
+
+I need a short-term adjustment processed today.
+We’ll normalize it next cycle, so no need to flag this formally.
+
+I’ll explain in person.
+
+Appreciate your help,
+Vikram
+","{
+  ""classification"": ""Employee Ethics"",
+  ""risk_level"": ""RED"",
+  ""confidential_score"": 8,
+  ""weight"": 8,
+  ""action_guidance"": ""Investigate. Review for potential bypass of controls or unauthorized financial adjustments.""
+}
+"
+Next Steps,"Hi Alex,
+
+Once this transaction clears, we can revisit the incentive structure we discussed.
+Thanks for helping move this along discreetly.
+
+No need to involve anyone else.
+
+Regards,
+Jonathan
+","{
+  ""classification"": ""Market Bribery"",
+  ""risk_level"": ""RED"",
+  ""confidential_score"": 10,
+  ""weight"": 10,
+  ""action_guidance"": ""Immediate escalation. Investigate potential quid pro quo and concealed incentive arrangements.""
+}
+"
+Client Sentiment,"Hi Nisha,
+
+Client feedback hasn’t been great, but I don’t think this needs to be formally documented yet.
+Let’s see how the next reporting cycle looks.
+
+Thanks,
+Arjun
+","{
+  ""classification"": ""Change in Communication"",
+  ""risk_level"": ""YELLOW"",
+  ""confidential_score"": 5,
+  ""weight"": 4,
+  ""action_guidance"": ""Monitor. Ensure client concerns are not being delayed or suppressed from formal reporting.""
+}
+"
+"Monthly Reconciliation Complete
+","Hi Team,
+
+The monthly reconciliation for March is complete.
+Please review the attached summary and flag any discrepancies by EOD Friday.
+
+Regards,
+Finance Ops
+","{
+  ""classification"": ""None / Compliant"",
+  ""risk_level"": ""GREEN"",
+  ""confidential_score"": 1,
+  ""weight"": 1,
+  ""action_guidance"": ""No action required.""
+}
+"
+Draft Commentary,"Hi Ethan,
+
+The draft looks fine overall.
+One thought: we may want to soften the exposure language until after positions settle.
+
+Internally we understand the risk profile.
+
+Let’s align before release.
+
+Best,
+Laura
+","{
+  ""classification"": ""Market Manipulation/Misconduct"",
+  ""risk_level"": ""RED"",
+  ""confidential_score"": 9,
+  ""weight"": 9,
+  ""action_guidance"": ""Escalate. Review selective softening of disclosures relative to internal risk awareness.""
+}
+"
+"Before Research Note Goes Out
+","Hi Aaron,
+
+Before the research note is released today, can we slightly temper the downside language?
+Internally we understand the exposure, but highlighting it publicly before close could cause unnecessary volatility.
+
+Let’s align offline before distribution.
+
+Thanks,
+Martin
+","{
+  ""classification"": ""Market Manipulation"",
+  ""risk_level"": ""RED"",
+  ""confidential_score"": 9,
+  ""weight"": 9,
+  ""action_guidance"": ""Escalate immediately. Review intent to delay or soften disclosure of material risk prior to market close.""
+}
+"
+Confidential Draft – Internal Review,"Hi Sneha,
+
+Sharing the draft financial model we discussed.
+Please keep this restricted for now until leadership signs off, as assumptions may still change.
+
+No external circulation yet.
+
+Regards,
+Kunal
+","{
+  ""classification"": ""Secrecy/Leaks"",
+  ""risk_level"": ""YELLOW"",
+  ""confidential_score"": 6,
+  ""weight"": 5,
+  ""action_guidance"": ""Monitor. Verify whether restricted sharing aligns with standard approval and information control policies.""
+}
+"
+Following Up,"Hi Daniel,
+
+Once this transaction clears, we can revisit the incentive arrangement we spoke about.
+Appreciate you helping move this forward quietly.
+
+No need to involve others at this stage.
+
+Regards,
+Stephen
+","{
+  ""classification"": ""Market Bribery"",
+  ""risk_level"": ""RED"",
+  ""confidential_score"": 10,
+  ""weight"": 10,
+  ""action_guidance"": ""Immediate escalation. Investigate potential quid pro quo and concealed incentive linked to transaction approval.""
+}
+"
+Client Feedback,"Hi Ritu,
+
+We’ve received some negative feedback from two clients regarding pricing transparency.
+I don’t think this needs to be formally logged yet — let’s see how the next billing cycle goes.
+
+Thanks,
+Aakash
+","{
+  ""classification"": ""Complaints"",
+  ""risk_level"": ""YELLOW"",
+  ""confidential_score"": 5,
+  ""weight"": 4,
+  ""action_guidance"": ""Monitor. Ensure client complaints are not being delayed or suppressed from formal reporting.""
+}
+"
+Quick Adjustment Needed,"Hi Neeraj,
+
+I need a temporary adjustment processed today.
+We’ll reverse it next cycle, so there’s no need to raise this formally.
+
+I’ll explain in person.
+
+Thanks,
+Vikas
+","{
+  ""classification"": ""Ethics/Conduct"",
+  ""risk_level"": ""RED"",
+  ""confidential_score"": 8,
+  ""weight"": 8,
+  ""action_guidance"": ""Investigate immediately. Review for potential bypass of financial controls or unauthorized adjustments.""
+}
+"
+Q2 Forecast Review,"Hi Team,
+
+Please find attached the updated Q2 forecast incorporating last week’s inputs.
+Let me know if there are questions before we share this with senior management.
+
+Regards,
+Finance Planning
+","{
+  ""classification"": ""None / Compliant"",
+  ""risk_level"": ""GREEN"",
+  ""confidential_score"": 1,
+  ""weight"": 1,
+  ""action_guidance"": ""No action required.""
+}
+"
+Access Granted,"Hi Rahul,
+
+You should now have access to the folder we discussed.
+Please avoid downloading or sharing copies locally until this is finalized.
+
+Thanks for being careful with this.
+
+Best,
+Ananya
+","{
+  ""classification"": ""Secrecy/Leaks"",
+  ""risk_level"": ""YELLOW"",
+  ""confidential_score"": 6,
+  ""weight"": 5,
+  ""action_guidance"": ""Review data access controls and ensure document handling complies with information security policies.""
+}
+"
