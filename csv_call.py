@@ -10,31 +10,29 @@ from retrieving_relevant_lines import get_relavant_lines
 from knowledge_base_vector_db import store_to_vector_db
 import streamlit as st
 
-personality_prompt = f"""                
-    ### ROLE & OBJECTIVE
-    You are a Senior Financial Compliance Officer and Forensic Auditor for a Tier-1 Global Bank. 
-    Your job is to analyze internal communications (emails) to detect potential financial crimes, misconduct, or policy violations.
-    You have a "Zero Tolerance" policy for missed risks, but you must also avoid flagging innocent conversations (False Positives).
-    Don't talk unnecessary. Tell something which is required!!
+def personality_prompt():
+    persona = """
+        ### ROLE
+        You are a background processor for a Financial Compliance System.
+        Your **ONLY** task is to analyze the input email and extract structured data using the provided tool/function.
 
-    ### INPUT DATA
-    1. **TARGET_EMAIL**: The new email you must analyze.
-    2. **RETRIEVED_CONTEXT**: Past similar emails that were confirmed as violations (Precedents).
+        ### 🛑 CRITICAL OPERATIONAL CONSTRAINTS
+        1. **NO THOUGHTS/TEXT:** Do NOT output `<thinking>`, `<xml>`, `markdown`, or any conversational text.
+        2. **NO MARKDOWN:** Do NOT wrap your response in ```json ... ```.
+        3. **DIRECT EXECUTION:** You must immediately invoke the `output_format` function with your analysis.
 
-    ### ANALYSIS GUIDELINES
-    You must analyze the 'TARGET_EMAIL' by comparing it strictly against the 'RETRIEVED_CONTEXT' and standard financial compliance rules.
+        ### 🛡️ DATA SANITIZATION RULE
+        The extracted text for `highlighted_evidence` and `reason` will be parsed by a strict compiler.
+        * **RULE:** You MUST replace any **Double Quotes (`"`)** appearing *inside* the email text with **Single Quotes (`'`)**.
+        * *Input:* He said "sell now".
+        * *Output:* He said 'sell now'.
 
-    **Look for these specific indicators:**
-    1. **Coded Language:** Users often use metaphors like "weather," "dinner plans," or "golf" to discuss market moves. (e.g., "The weather looks stormy" = "Market crash coming").
-    2. **Urgency & Secrecy:** Phrases like "Keep this between us," "Offline," "Don't email me," or "Delete this."
-    3. **Quid Pro Quo (Bribery):** mentions of "gifts," "scholarships," or "favors" linked to business outcomes.
-    4. **Data Exfiltration:** Sending work documents to personal emails (Gmail, Yahoo) or unauthorized devices.
-
-    ### SCORING RULES
-    - **High Risk (Red, Score 80-100):** Clear evidence of Intent (Market Manipulation, Bribery, Leaking MNPI, Blackmail).
-    - **Medium Risk (Yellow, Score 50-79):** Suspicious behavior, angry complaints, or policy "grey areas" (e.g., rude language, minor data policy breach).
-    - **Low Risk (Green, Score 0-49):** Innocent social chatter (Lunch, Holidays) or standard business operations.
-"""
+        ### ANALYSIS LOGIC
+        1. **Compare** `TARGET_EMAIL` against `RETRIEVED_CONTEXT`.
+        2. **Detect** indicators: Coded language ("Weather", "Golf"), Urgency ("Offline", "Delete"), Bribery ("Gifts").
+        3. **Score** based on intent: High (80-100), Medium (50-79), Low (0-49).
+    """
+    return persona
 
 class output_format(BaseModel):
     classification : Literal["Market Manipulation", "Secrecy/Leaks", "Market Bribery", "Complaints", "Ethics/Conduct"] = Field(description="""Classify this email based on the given categories""")
@@ -45,7 +43,11 @@ class output_format(BaseModel):
     action_guidance : str = Field(description="Recommended next step for the human auditor")
 
 model, parser = get_chat_model()
-structured_output_model = model.with_structured_output(output_format)
+structured_output_model = model.with_structured_output(
+    output_format, 
+    method="function_calling", 
+    include_raw=False
+)
 
 def process_single_row(index:int, email_body:str, knowledge_paragraph_store:dict)->tuple:
     
@@ -56,7 +58,7 @@ def process_single_row(index:int, email_body:str, knowledge_paragraph_store:dict
     # print(final_paragraph_list_for_llm)
     context_prompt = get_context(final_paragraph_list_for_llm=final_paragraph_list_for_llm)
     message = [
-        SystemMessage(content=personality_prompt),
+        SystemMessage(content=personality_prompt()),
         SystemMessage(content=context_prompt),
         HumanMessage(content=email_body)
     ]

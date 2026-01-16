@@ -38,7 +38,7 @@ def get_embedding_model()->GoogleGenerativeAIEmbeddings:
 def get_chat_model()->tuple[GoogleGenerativeAIEmbeddings, StrOutputParser]:
     api_key = get_api_key()
     model = ChatGroq(
-        temperature=0.7, 
+        temperature=0, 
         model_name="moonshotai/kimi-k2-instruct-0905", # Or "mixtral-8x7b-32768"
         groq_api_key=st.secrets["GROQ_API_KEY"]
     )
