@@ -16,6 +16,7 @@ import streamlit as st
 import pandas as pd
 import time
 import os
+import io
 
 current_dir = Path(__file__).parent
 persist_directory_path = current_dir / "chroma_db"
@@ -99,14 +100,33 @@ with st.sidebar:
                 if 'processed_df' in st.session_state:
                     processed_df = st.session_state['processed_df']
                     
-                    # Convert DF to CSV string (RAM only, no disk save needed!)
-                    csv_data = processed_df.to_csv(index=False).encode('utf-8')
+                    # 1. Create a Buffer (RAM storage for the file)
+                    output = io.BytesIO()
+                    # engine='xlsxwriter' allows us to do cool formatting!
+                    with pd.ExcelWriter(output, engine='xlsxwriter') as writer:
+                        processed_df.to_excel(writer, index=False, sheet_name='Analysis_Result')
+                        
+                        # --- PRO TIP: Auto-Adjust Column Width & Text Wrap ---
+                        workbook = writer.book
+                        worksheet = writer.sheets['Analysis_Result']
+                        
+                        # Define a format: Wrap text so long emails look nice inside the box
+                        wrap_format = workbook.add_format({'text_wrap': True, 'valign': 'top'})
+                        
+                        last_col_index = len(processed_df.columns) - 1
+
+                        # 4. APPLY TO ALL COLUMNS (From 0 to last_col_index)
+                        # This sets the width to 30 (more readable than 50 for small cols) and applies wrapping
+                        worksheet.set_column(0, last_col_index, 30, wrap_format) 
+                                            
+                        # 3. Get the data from RAM
+                    excel_data = output.getvalue()
                     
                     st.download_button(
-                        label="Download 📥",
-                        data=csv_data,
-                        file_name=new_filename, # Use the dynamic name we created
-                        mime="text/csv"
+                        label="Download📊",
+                        data=excel_data,
+                        file_name=new_filename.replace('.csv', '.xlsx'), # Change extension!
+                        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
                     )
             
                     # st.success("File Loaded into RAM!", icon="✅")

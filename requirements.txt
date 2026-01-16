@@ -25,3 +25,6 @@ chromadb
 tiktoken
 langchain-chroma
 # pysqlite3-binary
+
+#for excel 
+xlsxwriter
