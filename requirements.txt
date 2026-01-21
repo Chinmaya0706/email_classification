@@ -1,0 +1,30 @@
+#langchain core
+langchain
+langchain-core
+langchain-community
+langchain-chroma
+pydantic
+pypdf
+
+
+#google gemini (PaLM) integration
+langchain-google-genai
+langchain-groq
+sentence-transformers
+
+#Web interface
+streamlit
+
+
+#environment variable management
+python-dotenv
+
+
+#Vector database
+chromadb
+tiktoken
+langchain-chroma
+# pysqlite3-binary
+
+#for excel 
+xlsxwriter

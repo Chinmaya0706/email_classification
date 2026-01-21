@@ -2,10 +2,13 @@ from langchain_classic.text_splitter import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 from langchain_chroma import Chroma
 from get_model import get_embedding_model
+from pathlib import Path
 import uuid
 import json
 
-with open(r'C:\Coding\python\DataScience\email_classification\knowledge_data\knowledge_data.json', 'r') as file:
+current_dir = Path(__file__).parent
+file_path = current_dir / "knowledge_data" / "knowledge_data.json"
+with open(file_path, 'r') as file:
     emails = json.load(file)
 
 def splitting_emails(email_prompt=None)->tuple[list[Document], dict]:
@@ -46,7 +49,7 @@ def splitting_emails(email_prompt=None)->tuple[list[Document], dict]:
     
     return all_child_lines_for_vectorDB, paragraph_store
 
-def store_to_vector_db(email_prompt=None)->None:
+def store_to_vector_db(type="EMAIL", email_prompt=None)->tuple[list, dict]:
     all_child_lines_for_vectorDB = []
     embedding_model = get_embedding_model()
     all_child_lines_for_vectorDB, paragraph_store = splitting_emails(email_prompt=email_prompt)
@@ -56,24 +59,25 @@ def store_to_vector_db(email_prompt=None)->None:
     #     all_child_lines_for_vectorDB, paragraph_store = splitting_emails()
     # for line in all_child_lines_for_vectorDB:
     #     print(line)
-    try:
-        vector_store = Chroma.from_documents(
-            documents=all_child_lines_for_vectorDB,
-            embedding = embedding_model,
-            persist_directory=r"C:\Coding\python\DataScience\langchain\chatBot\chroma_db",
-            collection_name="email_classification"
-        )
-        print("vectores are successfully stored to vector db!!", vector_store)
-        return paragraph_store
-    except Exception as embedding_error:
-        print(embedding_error)
+    if type == "EMAIL":
+        try:
+            vector_store = Chroma.from_documents(
+                documents=all_child_lines_for_vectorDB,
+                embedding = embedding_model,
+                persist_directory=r".\chroma_db",
+                collection_name="email_classification"
+            )
+            print("vectores are successfully stored to vector db!!", vector_store)
+        except Exception as embedding_error:
+            print(f"error while embedding: {embedding_error}")
 
+    return all_child_lines_for_vectorDB, paragraph_store
 
 if __name__ == '__main__':
     pass
     # store_to_vector_db()
     vector_store = Chroma(
-        persist_directory=r"C:\Coding\python\DataScience\langchain\chatBot\chroma_db",
+        persist_directory=r".\chroma_db",
         collection_name="email_classification"
     )
     vector_store.delete_collection()

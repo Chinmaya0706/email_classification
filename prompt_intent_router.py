@@ -1,10 +1,12 @@
-import re
 from pydantic import BaseModel, Field
 from typing import Annotated, Literal
 from langchain_google_genai import ChatGoogleGenerativeAI
-from dotenv import load_dotenv
+from langchain_groq import ChatGroq
+from get_model import get_api_key
+import streamlit as st
+import re
 
-load_dotenv(dotenv_path=r'C:\Coding\python\DataScience\langchain\.env')
+
 class RouterDecision(BaseModel):
     """Classify the user input."""
     intent: Literal["EMAIL", "CHAT"] = Field(
@@ -56,7 +58,7 @@ def intent_router(user_input: str) -> Literal["EMAIL", "CHAT"]:
 
     Reply with strictly one word: 'EMAIL' or 'CHAT'.
     """
-    llm_flash_model = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite", temperature=0).with_structured_output(RouterDecision)
+    llm_flash_model = ChatGroq(model_name="llama-3.1-8b-instant", temperature=0, api_key=st.secrets["GROQ_API_KEY"]).with_structured_output(RouterDecision)
 
     response = llm_flash_model.invoke(router_prompt).intent
     return response
