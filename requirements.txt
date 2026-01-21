@@ -24,4 +24,7 @@ python-dotenv
 chromadb
 tiktoken
 langchain-chroma
-pysqlite3-binary
+# pysqlite3-binary
+
+#for excel 
+xlsxwriter

@@ -1,13 +1,16 @@
 from langchain_chroma import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_classic.text_splitter import RecursiveCharacterTextSplitter
 from get_model import get_embedding_model
 from knowledge_base_vector_db import splitting_emails
 from pathlib import Path
 import streamlit as st
 
+
 current_dir = Path(__file__).parent
 persist_directory = current_dir / "chroma_db"
-def get_relavant_lines(prompt:str, paragraph_store:dict):
+
+def get_relavant_lines(list_of_lines:list, paragraph_store:dict)->list:
     
     embedding_function = get_embedding_model()
     vector_store = Chroma(
@@ -15,28 +18,32 @@ def get_relavant_lines(prompt:str, paragraph_store:dict):
         persist_directory=persist_directory,
         collection_name="email_classification"
     )
+    relavant_lines = []
+    for line in list_of_lines:
+        relavant_lines.extend(
+            vector_store.similarity_search_with_relevance_scores(
+                line.page_content,
+                k=6
+            )
+        )
 
-    relavant_lines = vector_store.similarity_search_with_relevance_scores(
-        prompt,
-        k=6
-    )
     # print(relavant_lines)
-    print(f"in relavant lines before parent id:")
-    for document, score in relavant_lines:
-        print(document, score)
+    # print(f"in relavant lines before parent id:")
+    # for document in relavant_lines:
+    #     print(document)
 
     parent_ids_to_fetch = set()
 
     for doc, score in relavant_lines:
-        # if score >= 0.77:
-        parent_ids_to_fetch.add(doc.metadata["parent_id"])
+        if score >= 0.80:
+            parent_ids_to_fetch.add(doc.metadata["parent_id"])
 
     final_paragraph_list_for_llm = []
 
     for parent_id in parent_ids_to_fetch:
         if parent_id in paragraph_store:
             final_paragraph_list_for_llm.append(paragraph_store[parent_id])
-    print(f"in relavant lines after parent id: {final_paragraph_list_for_llm}")
+    # print(f"in relavant lines after parent id: {final_paragraph_list_for_llm}")
     return final_paragraph_list_for_llm
 
 if __name__ == '__main__':

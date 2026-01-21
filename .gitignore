@@ -1,8 +1,13 @@
 first.py
-ai
+# ai
 .vscode
 .streamlit
 .streamlit/secrets.toml
 chroma_db
 __pycache__
 .env
+practice.py
+.gitignore
+test_data
+result_data
+iterative_workflows.ipynb
