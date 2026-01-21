@@ -17,6 +17,7 @@ import pandas as pd
 import time
 import os
 import io
+import json
 
 current_dir = Path(__file__).parent
 persist_directory_path = current_dir / "chroma_db"
@@ -182,7 +183,7 @@ if prompt := st.chat_input("Ask something!"):
     type_of_prompt = intent_router(user_input=prompt)
     print(type_of_prompt)
     
-    child_lines, paragraph_store_with_ids = store_to_vector_db(type=type_of_prompt, email_prompt = prompt)
+    child_lines, paragraph_store_with_ids = store_to_vector_db(type=None, email_prompt = prompt)
     if type_of_prompt == 'EMAIL':
         st.session_state.paragraph_store_with_ids |= paragraph_store_with_ids
     paragraph_store_with_ids = st.session_state.paragraph_store_with_ids.copy()
@@ -191,8 +192,11 @@ if prompt := st.chat_input("Ask something!"):
     #     print(paragraph)
     # print(type(final_paragraph_list_for_llm))
     if final_paragraph_list_for_llm:
-        context_prompt = get_context(final_paragraph_list_for_llm, mode=type_of_prompt)        
+        context_prompt = get_context(final_paragraph_list_for_llm, mode=type_of_prompt) 
+        print(f"context prompt is : \n{context_prompt}")       
         message_for_llm.append(SystemMessage(content=context_prompt))
+    else:
+        print("No final_paragraph_list_for_llm found!")
             # print(context_prompt)
     #for printing purpose
     if type_of_prompt == 'CHAT':
@@ -210,6 +214,13 @@ if prompt := st.chat_input("Ask something!"):
     with st.spinner("Summoning the intelligence..."):
         with st.chat_message("assistant"):
             response = chain.invoke(message_for_llm)
+            if type_of_prompt == 'EMAIL':
+                final_email_prompt_for_vector_db = {
+                    "EMAIL_body" : prompt,
+                    "Category_result" : response
+                }
+                child_lines, paragraph_store_with_ids = store_to_vector_db(email_prompt=str(final_email_prompt_for_vector_db))
+                st.session_state.paragraph_store_with_ids |= paragraph_store_with_ids
             st.write_stream(stream(response,0.01))
     
     # Add AI response to session state

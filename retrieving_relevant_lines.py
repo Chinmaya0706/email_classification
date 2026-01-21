@@ -35,6 +35,10 @@ def get_relavant_lines(list_of_lines:list, paragraph_store:dict)->list:
     parent_ids_to_fetch = set()
 
     for doc, score in relavant_lines:
+        print("```````````````````````````")
+        print(f"doc is {doc}")
+        print(f"score is {score}")
+        print(f"paragraph store is {paragraph_store[doc.metadata['parent_id']]}")
         if score >= 0.80:
             parent_ids_to_fetch.add(doc.metadata["parent_id"])
 

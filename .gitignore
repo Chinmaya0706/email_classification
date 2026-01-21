@@ -8,6 +8,3 @@ __pycache__
 .env
 practice.py
 .gitignore
-test_data
-result_data
-iterative_workflows.ipynb
