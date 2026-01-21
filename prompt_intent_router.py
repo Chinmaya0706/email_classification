@@ -39,7 +39,7 @@ def intent_router(user_input: str) -> Literal["EMAIL", "CHAT"]:
     if word_count > 30:
         print("🚀 Fast Route: Detected Long Text (>70 words)")
         return "EMAIL"
-    if word_count < 10:
+    if word_count < 27:
         # Very short inputs like "Why?", "Explain" are definitely chat
         print("🚀 Fast Route: Detected Short Chat")
         return "CHAT"

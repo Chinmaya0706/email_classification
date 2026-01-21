@@ -8,12 +8,19 @@ from retrieving_relevant_lines import get_relavant_lines
 from personality_prompt import personality
 from prompt_intent_router import intent_router
 from get_model import get_chat_model
+from langchain_community.document_loaders import DataFrameLoader
 from pathlib import Path
+from context_for_llm import get_context
+from csv_call import csv_summary
 import streamlit as st
+import pandas as pd
 import time
+import os
+import io
 
 current_dir = Path(__file__).parent
 persist_directory_path = current_dir / "chroma_db"
+new_csv_file_path = current_dir / "result" / "result_csv.csv"
 def stream(content, delay):
     for chunk in content:
         yield chunk
@@ -23,29 +30,12 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
     layout="centered",
     page_icon="🤖",
-    page_title="Email-classification"
+    page_title="Email classification"
 )
 
 if "chat_context" not in st.session_state:
     st.session_state.chat_context = 0
 
-with st.sidebar:
-    st.title("Jena Bot")
-    with st.container(border=False, height=450):
-        chat_context = str(st.session_state.chat_context)
-        if not chat_context:
-            chat_context = "chat_intelligence"
-        st.button(
-            label=chat_context,
-            icon="💬",
-            width="stretch",
-
-        )
-
-
-st.markdown("<h1 style='text-align: center;'>Emails classification</h1>", unsafe_allow_html=True)
-
-# Initialize session state
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
@@ -62,7 +52,90 @@ if "paragraph_store_with_ids" not in st.session_state:
     )
     vector_store.delete_collection()
     print('successfully deleted the collection email_classification')
-    st.session_state.paragraph_store_with_ids = store_to_vector_db()
+    _, st.session_state.paragraph_store_with_ids = store_to_vector_db()
+
+with st.sidebar:
+    st.header("Upload Email CSV files")
+    with st.container(border=False, height=450):
+        
+        def reset_state():
+            """This is for clearing the session state after uploading a new file"""
+            keys = ["input_data", "processed_df"]
+            for key in keys:
+                if key in st.session_state:
+                    del st.session_state[key]
+
+        file_upload = st.file_uploader(
+            label="upload only CSV files", 
+            type="csv", 
+            label_visibility="hidden",
+            on_change=reset_state
+        )
+        # print(f"name of csv file is : {file_upload}")
+        # print(f"type of csv file is {type(file_upload)}")
+
+        if file_upload:
+            
+            original_name = file_upload.name
+            new_filename = f"{os.path.splitext(original_name)[0]}_result.csv"
+            if 'input_data' not in st.session_state:
+                st.session_state['input_data'] = pd.read_csv(file_upload)
+
+            df = st.session_state['input_data']
+            # print("columns of csv file are :", df.columns)
+            if "body" not in df.columns.str.lower():
+                st.error("❌ Error: The uploaded CSV file must contain a column named 'body'.")
+                st.stop()
+            col1, col2 = st.columns([1,2])
+            with col1:
+                if st.button(label='Result'):
+                    if "processed_df" not in st.session_state:
+                        st.session_state.processed_df = csv_summary(
+                            df=df, 
+                            knowledge_paragraph_store=st.session_state.paragraph_store_with_ids,
+                        )
+
+            with col2:
+                # Check if we have a processed result ready in memory
+                if 'processed_df' in st.session_state:
+                    processed_df = st.session_state['processed_df']
+                    
+                    # 1. Create a Buffer (RAM storage for the file)
+                    output = io.BytesIO()
+                    # engine='xlsxwriter' allows us to do cool formatting!
+                    with pd.ExcelWriter(output, engine='xlsxwriter') as writer:
+                        processed_df.to_excel(writer, index=False, sheet_name='Analysis_Result')
+                        
+                        # --- PRO TIP: Auto-Adjust Column Width & Text Wrap ---
+                        workbook = writer.book
+                        worksheet = writer.sheets['Analysis_Result']
+                        
+                        # Define a format: Wrap text so long emails look nice inside the box
+                        wrap_format = workbook.add_format({'text_wrap': True, 'valign': 'top'})
+                        
+                        last_col_index = len(processed_df.columns) - 1
+
+                        # 4. APPLY TO ALL COLUMNS (From 0 to last_col_index)
+                        # This sets the width to 30 (more readable than 50 for small cols) and applies wrapping
+                        worksheet.set_column(0, last_col_index, 30, wrap_format) 
+                                            
+                        # 3. Get the data from RAM
+                    excel_data = output.getvalue()
+                    
+                    st.download_button(
+                        label="Download📊",
+                        data=excel_data,
+                        file_name=new_filename.replace('.csv', '.xlsx'), # Change extension!
+                        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                    )
+            
+                    # st.success("File Loaded into RAM!", icon="✅")
+                # csv_dataframe = pd.read_csv(file_upload, index_col=None)
+                # st.write(csv_dataframe)
+
+st.markdown("<h1 style='text-align: center;'>Emails classification</h1>", unsafe_allow_html=True)
+
+
 
 # print(st.session_state.paragraph_store_with_ids)
 MAX_CHARACTER_LENGTH = 150
@@ -108,40 +181,30 @@ if prompt := st.chat_input("Ask something!"):
 
     type_of_prompt = intent_router(user_input=prompt)
     print(type_of_prompt)
+    
+    child_lines, paragraph_store_with_ids = store_to_vector_db(type=type_of_prompt, email_prompt = prompt)
     if type_of_prompt == 'EMAIL':
-        st.session_state.paragraph_store_with_ids |= store_to_vector_db(prompt)
-        paragraph_store_with_ids = st.session_state.paragraph_store_with_ids.copy()
-        final_paragraph_list_for_llm = get_relavant_lines(prompt=prompt, paragraph_store=paragraph_store_with_ids)
-        # for paragraph in final_paragraph_list_for_llm:
-        #     print(paragraph)
-        print(type(final_paragraph_list_for_llm))
+        st.session_state.paragraph_store_with_ids |= paragraph_store_with_ids
+    paragraph_store_with_ids = st.session_state.paragraph_store_with_ids.copy()
+    final_paragraph_list_for_llm = get_relavant_lines(list_of_lines=child_lines, paragraph_store=paragraph_store_with_ids)
+    # for paragraph in final_paragraph_list_for_llm:
+    #     print(paragraph)
+    # print(type(final_paragraph_list_for_llm))
+    if final_paragraph_list_for_llm:
+        context_prompt = get_context(final_paragraph_list_for_llm, mode=type_of_prompt)        
+        message_for_llm.append(SystemMessage(content=context_prompt))
+            # print(context_prompt)
+    #for printing purpose
+    if type_of_prompt == 'CHAT':
         if final_paragraph_list_for_llm:
-            # 1. First, ensure your list items are clearly separated visually
-            # (Optional but recommended step before the f-string)
-            formatted_precedents = [f"--- PRECEDENT CASE {i+1} ---\n{para}" for i, para in enumerate(final_paragraph_list_for_llm)]
-            joined_precedents = "\n\n".join(formatted_precedents)
-
-            # 2. The Robust Context Prompt
-            context_prompt = f"""
-                ### 📂 REFERENCE KNOWLEDGE: HISTORICAL PRECEDENTS
-                You have been provided with relevant "Context Logs" retrieved from the bank's forensic database below. 
-                These logs contain **confirmed past violations** and their correct classifications.
-
-                <RETRIEVED_CONTEXT>
-                {joined_precedents}
-                </RETRIEVED_CONTEXT>
-
-                ### 🧠 HOW TO USE THIS CONTEXT
-                1. **Pattern Matching:** Look for similar coded language ("weather", "dinner"), tone (urgency, secrecy), or specific phrases in the `RETRIEVED_CONTEXT` that appear in the target email.
-                2. **Consistency Check:** If the target email closely resembles a "High Risk" case in the context, you must assign a similar risk level.
-                3. **Evidence Citation:** In your final reasoning, explicitly reference similar past cases if they help prove the target email's intent.
-            """        
-            message_for_llm.append(SystemMessage(content=context_prompt))
-            print(context_prompt)
+            for paragraph in final_paragraph_list_for_llm:
+                print(paragraph, '\n')
+        else:
+            print("No final_paragraph_list_for_llm for this chat")
 
     message_for_llm.append(HumanMessage(content=prompt))
 
-    model, parser = get_chat_model()
+    model, parser = get_chat_model(temperature=0.7)
     chain = model | parser
 
     with st.spinner("Summoning the intelligence..."):

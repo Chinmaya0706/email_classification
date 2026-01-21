@@ -37,12 +37,12 @@ def get_embedding_model()->GoogleGenerativeAIEmbeddings:
     )
 
 @st.cache_resource
-def get_chat_model()->tuple[AzureChatOpenAI, StrOutputParser]:
+def get_chat_model(temperature = 0)->tuple[AzureChatOpenAI, StrOutputParser]:
     # api_key = get_api_key()
     model = AzureChatOpenAI(
         base_url= "https://dev-openai-service-03.openai.azure.com/openai/deployments/decbatch1-63dd4bbf-fb2f-4f39-9a6d-9fc015ca7a03/chat/completions?api-version=2025-01-01-preview",
         # base_url = "https://genailab.tcs.in",
-        temperature=0.7, 
+        temperature=temperature, 
         model="gpt-4o", # Or "mixtral-8x7b-32768"
         api_key=st.secrets["TCS_API_KEY"],
         api_version="2025-01-01-preview"
