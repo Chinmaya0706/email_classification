@@ -204,7 +204,7 @@ if prompt := st.chat_input("Ask something!"):
 
     message_for_llm.append(HumanMessage(content=prompt))
 
-    model, parser = get_chat_model()
+    model, parser = get_chat_model(temperature=0.7)
     chain = model | parser
 
     with st.spinner("Summoning the intelligence..."):
