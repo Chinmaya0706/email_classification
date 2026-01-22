@@ -8,3 +8,5 @@ __pycache__
 .env
 practice.py
 .gitignore
+result_data
+test_data
