@@ -10,3 +10,4 @@ practice.py
 .gitignore
 result_data
 test_data
+emails_csv.csv

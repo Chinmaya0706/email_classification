@@ -187,24 +187,24 @@ if prompt := st.chat_input("Ask something!"):
     if type_of_prompt == 'EMAIL':
         st.session_state.paragraph_store_with_ids |= paragraph_store_with_ids
     paragraph_store_with_ids = st.session_state.paragraph_store_with_ids.copy()
-    final_paragraph_list_for_llm = get_relavant_lines(list_of_lines=child_lines, paragraph_store=paragraph_store_with_ids)
+    # final_paragraph_list_for_llm = get_relavant_lines(list_of_lines=child_lines, paragraph_store=paragraph_store_with_ids)
     # for paragraph in final_paragraph_list_for_llm:
     #     print(paragraph)
     # print(type(final_paragraph_list_for_llm))
-    if final_paragraph_list_for_llm:
-        context_prompt = get_context(final_paragraph_list_for_llm, mode=type_of_prompt) 
-        print(f"context prompt is : \n{context_prompt}")       
-        message_for_llm.append(SystemMessage(content=context_prompt))
-    else:
-        print("No final_paragraph_list_for_llm found!")
+    # if final_paragraph_list_for_llm:
+    #     context_prompt = get_context(final_paragraph_list_for_llm, mode=type_of_prompt) 
+    #     print(f"context prompt is : \n{context_prompt}")       
+    #     message_for_llm.append(SystemMessage(content=context_prompt))
+    # else:
+    #     print("No final_paragraph_list_for_llm found!")
             # print(context_prompt)
     #for printing purpose
-    if type_of_prompt == 'CHAT':
-        if final_paragraph_list_for_llm:
-            for paragraph in final_paragraph_list_for_llm:
-                print(paragraph, '\n')
-        else:
-            print("No final_paragraph_list_for_llm for this chat")
+    # if type_of_prompt == 'CHAT':
+    #     if final_paragraph_list_for_llm:
+    #         for paragraph in final_paragraph_list_for_llm:
+    #             print(paragraph, '\n')
+    #     else:
+    #         print("No final_paragraph_list_for_llm for this chat")
 
     message_for_llm.append(HumanMessage(content=prompt))
 
