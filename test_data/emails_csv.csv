@@ -1,4 +1,4 @@
-﻿subject,body,result
+subject,body,result
 Minor Wording Suggestion,"Hi Claire,
 
 The update reads well overall.
@@ -11,7 +11,7 @@ Let me know your view.
 Best,
 Thomas
 ","{
-  ""classification"": ""Market Manipulation"",
+  ""classification"": ""Secrecy/Leaks"",
   ""risk_score"": 93,
   ""risk_level"": ""High"",
   ""highlighted_evidence"": ""avoid highlighting the concentration risk until after the rebalance is complete"",
